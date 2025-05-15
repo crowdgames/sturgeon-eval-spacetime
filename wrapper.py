@@ -97,7 +97,7 @@ def run_sturgeon_diff(infile, outfile, irsz, icsz, orsz, ocsz, tstep, tries, met
     setup_cmds = [
         f"python sturgeon/lvl2game.py --infile setup/{infile}.lvl --outfile setup/{infile}-{irsz}.game --gap 2",
         f"python sturgeon/level2concat.py --outfile setup/{infile}-{orsz} --game 0 1 2 X --padding 2 --term-inst {tstep} --size {orsz} {ocsz}",
-        f"python sturgeon/input2tile.py --outfile {sturgeonD_setup_dir}.tile --textfile setup/{infile}.lvl --gamefile setup/{infile}.game --text-key-only",
+        f"python sturgeon/input2tile.py --outfile {sturgeonD_setup_dir}.tile --textfile setup/{infile}.lvl --gamefile setup/{infile}-{irsz}.game --text-key-only",
         f"python sturgeon/tile2scheme.py --outfile {sturgeonD_setup_dir}-P.scheme --tilefile {sturgeonD_setup_dir}.tile --pattern 0=nbr-l 2=single X=single",
         f"python sturgeon/tilediff2scheme.py --outfile {sturgeonD_setup_dir}-D.scheme --tilefile {sturgeonD_setup_dir}.tile --diff-offset-row {irsz+2} --game 1",
         f"python sturgeon/scheme2merge.py --outfile {sturgeonD_setup_dir}-M.scheme --schemefile {sturgeonD_setup_dir}-P.scheme {sturgeonD_setup_dir}-D.scheme",
@@ -190,4 +190,8 @@ if __name__ == "__main__":
 
 
 
-# sample command : python wrapper.py --infile field/path_1_nw --outfile field/field --tries 1 --insize 12 12 --outgrid 10 6 6
+# sample_field_command : python wrapper.py --infile field/path_1_nw --outfile field/field --tries 1 --insize 12 12 --outgrid 10 6 6
+    ## diff merge values (12x12 -> 6x6): --remap-row \" -15,-13=6\" \" -1,1=0\" \"13,15=-6\"
+
+# sample_soko_command : python wrapper.py --infile soko/soko_1 --outfile soko/soko_1 --tries 1 --insize 7 6 --outgrid 10 6 6
+    ## diff merge values (7x6 -> 6x6): --remap-row \" -11,-7=1\" \" -2,2=0\" \"7,11=-1\"
