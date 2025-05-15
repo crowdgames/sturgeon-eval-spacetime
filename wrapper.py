@@ -87,9 +87,6 @@ def run_sturgeon_block(infile, outfile, irsz, icsz, orsz, ocsz, tstep, tries, me
     }
 
 
-from pathlib import Path
-import os
-
 def run_sturgeon_diff(infile, outfile, irsz, icsz, orsz, ocsz, tstep, tries, metrics):
     print("Running Sturgeon Diff...")
     runs_data = []
