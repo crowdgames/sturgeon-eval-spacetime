@@ -9,12 +9,12 @@ python_version = "3.12"
 [packages]
 networkx = "*"
 numpy = "*"
-Pillow = "*"
 pydot = "*"
 reportlab = "*"
 squarify = "*"
 webcolors = "*"
 wfc = {file = "wfc", editable = true}
+pillow = "*"
 
 [solvers-minimal]
 networkx = "*"

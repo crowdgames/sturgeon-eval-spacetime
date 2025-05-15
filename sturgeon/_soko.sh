@@ -49,12 +49,14 @@ if [ ! -d _soko/setup ]; then
            --remap-row " -10,-6=-2" " -2,2=0" "6,10=2"
 
     python scheme2merge.py --outfile _soko/setup/soko-8.scheme --schemefile _soko/setup/soko-8-M.scheme _soko/setup/soko-8f6-M.scheme
-    python scheme2merge.py --outfile _soko/setup/soko-7.scheme --schemefile _soko/setup/soko-8.scheme \
-           --remap-row " -12,-8=1" " -2,2=0" "8,12=-1"
-    python scheme2merge.py --outfile _soko/setup/soko-9.scheme --schemefile _soko/setup/soko-8.scheme \
-           --remap-row " -12,-8=-1" " -2,2=0" "8,12=1"
+    # python scheme2merge.py --outfile _soko/setup/soko-7.scheme --schemefile _soko/setup/soko-8.scheme \
+    #        --remap-row " -12,-8=1" " -2,2=0" "8,12=-1"
+    python scheme2merge.py --outfile _soko/setup/soko-5.scheme --schemefile _soko/setup/soko-8.scheme \
+           --remap-row " -12,-8=3" " -2,2=0" "8,12=-3"       
+    # python scheme2merge.py --outfile _soko/setup/soko-9.scheme --schemefile _soko/setup/soko-8.scheme \
+    #        --remap-row " -12,-8=-1" " -2,2=0" "8,12=1"
 
-    for sz in 7 9; do
+    for sz in 5 7 9; do
         python level2concat.py --outfile _soko/setup/soko-tpl-${sz} --game 0 1 2 X --padding 2 --term-inst 20 --size ${sz} ${sz}
     done
 fi
@@ -62,31 +64,45 @@ fi
 if [ ! -d _soko/out ]; then
     mkdir -p _soko/out
 
-    for ii in `seq -f '%03g' 0 2`; do
-        python scheme2output.py --outfile _soko/out/soko-out-7-${ii} --schemefile _soko/setup/soko-7.scheme \
-               --solver pysat-gluecard41 \
-               --out-result-none --out-tlvl-none \
-               --pattern-hard --pattern-single \
-               --tagfile _soko/setup/soko-tpl-7.tag \
-               --gamefile _soko/setup/soko-tpl-7.game \
-               --custom text-count 0 0 7 7 "@" 1 1 hard \
-               --custom text-count 0 0 7 7 "#" 3 3 hard \
-               --custom text-count 0 0 7 7 "o" 3 3 hard \
-               --custom text-count 0 0 7 7 "O" 0 0 hard \
-               --random ${ii}
-    done
+    # for ii in `seq -f '%03g' 0 2`; do
+    #     python scheme2output.py --outfile _soko/out/soko-out-7-${ii} --schemefile _soko/setup/soko-7.scheme \
+    #            --solver pysat-gluecard41 \
+    #            --out-result-none --out-tlvl-none \
+    #            --pattern-hard --pattern-single \
+    #            --tagfile _soko/setup/soko-tpl-7.tag \
+    #            --gamefile _soko/setup/soko-tpl-7.game \
+    #            --custom text-count 0 0 7 7 "@" 1 1 hard \
+    #            --custom text-count 0 0 7 7 "#" 3 3 hard \
+    #            --custom text-count 0 0 7 7 "o" 3 3 hard \
+    #            --custom text-count 0 0 7 7 "O" 0 0 hard \
+    #            --random ${ii}
+    # done
+
+    # for ii in `seq -f '%03g' 0 2`; do
+    #     python scheme2output.py --outfile _soko/out/soko-out-9-${ii} --schemefile _soko/setup/soko-9.scheme \
+    #            --solver pysat-gluecard41 \
+    #            --out-result-none --out-tlvl-none \
+    #            --pattern-hard --pattern-single \
+    #            --tagfile _soko/setup/soko-tpl-9.tag \
+    #            --gamefile _soko/setup/soko-tpl-9.game \
+    #            --custom text-count 0 0 9 9 "@" 1 1 hard \
+    #            --custom text-count 0 0 9 9 "#" 3 3 hard \
+    #            --custom text-count 0 0 9 9 "o" 3 3 hard \
+    #            --custom text-count 0 0 9 9 "O" 0 0 hard \
+    #            --random ${ii}
+    # done
 
     for ii in `seq -f '%03g' 0 2`; do
-        python scheme2output.py --outfile _soko/out/soko-out-9-${ii} --schemefile _soko/setup/soko-9.scheme \
+        python scheme2output.py --outfile _soko/out/soko-out-5-${ii} --schemefile _soko/setup/soko-5.scheme \
                --solver pysat-gluecard41 \
                --out-result-none --out-tlvl-none \
                --pattern-hard --pattern-single \
-               --tagfile _soko/setup/soko-tpl-9.tag \
-               --gamefile _soko/setup/soko-tpl-9.game \
-               --custom text-count 0 0 9 9 "@" 1 1 hard \
-               --custom text-count 0 0 9 9 "#" 3 3 hard \
-               --custom text-count 0 0 9 9 "o" 3 3 hard \
-               --custom text-count 0 0 9 9 "O" 0 0 hard \
+               --tagfile _soko/setup/soko-tpl-5.tag \
+               --gamefile _soko/setup/soko-tpl-5.game \
+               --custom text-count 0 0 5 5 "@" 1 1 hard \
+               --custom text-count 0 0 5 5 "#" 1 1 hard \
+               --custom text-count 0 0 5 5 "o" 1 1 hard \
+               --custom text-count 0 0 5 5 "O" 0 0 hard \
                --random ${ii}
     done
 fi
