@@ -1,1 +1,0 @@
-SMILES string from [PubChem](https://pubchem.ncbi.nlm.nih.gov/) converted to 2D PBD with [cheminfo's OPENBABEL converter](http://www.cheminfo.org/Chemistry/Cheminformatics/FormatConverter/index.html).
