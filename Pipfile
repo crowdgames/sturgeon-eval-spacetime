@@ -15,6 +15,7 @@ squarify = "*"
 webcolors = "*"
 wfc = {file = "wfc", editable = true}
 pillow = "*"
+python-sat = "*"
 
 [solvers-minimal]
 networkx = "*"
