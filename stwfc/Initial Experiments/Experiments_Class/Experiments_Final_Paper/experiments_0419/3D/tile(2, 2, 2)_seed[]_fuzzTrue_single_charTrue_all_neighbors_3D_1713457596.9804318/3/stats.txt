@@ -1,3 +1,0 @@
-Num trials: 3/10
-Num samples: 95
-Elapsed: 963.506325006485
