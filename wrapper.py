@@ -35,8 +35,8 @@ def run_sturgeon_block(infile, outfile, irsz, icsz, orsz, ocsz, tstep, tries, me
     setup_cmds = [
         f"python sturgeon/taggenerator.py --tagsize {orsz} {ocsz} --blockcount {tstep} --outfile setup/{infile}.tag --gap 2",
         f"python sturgeon/input2tile.py --outfile {sturgeonB_setup_dir}.tile --textfile setup/{infile}.lvl",
-        f"python sturgeon/tile2scheme.py --outfile {sturgeonB_setup_dir}_{irsz}.scheme --tilefile {sturgeonB_setup_dir}.tile --pattern block-rst-noout,2,3,3,{irsz+2}",
-        f"python sturgeon/scheme2merge.py --outfile {sturgeonB_setup_dir}_{orsz}.scheme --schemefile {sturgeonB_setup_dir}_{irsz}.scheme --remap-row \"-15,-14=6\" \"-1,1=0\" \"14,15=-6\"",
+        f"python sturgeon/tile2scheme.py --outfile {sturgeonB_setup_dir}_{irsz}.scheme --tilefile {sturgeonB_setup_dir}.tile --pattern block-rst-noout,3,3,2,{irsz+2}",
+        f"python sturgeon/scheme2merge.py --outfile {sturgeonB_setup_dir}_{orsz}.scheme --schemefile {sturgeonB_setup_dir}_{irsz}.scheme --remap-row \"0,2=0\" \"{irsz+2},{irsz+4}={orsz-irsz}\"",
     ]
 
     setup_time = 0
@@ -68,7 +68,10 @@ def run_sturgeon_block(infile, outfile, irsz, icsz, orsz, ocsz, tstep, tries, me
                 f"python sturgeon/scheme2output.py --outfile {run_out_dir}/out "
                 f"--schemefile {sturgeonB_setup_dir}_{orsz}.scheme "
                 f"--solver pysat-gluecard41 --out-result-none --out-tlvl-none --pattern-hard "
-                f"--tagfile setup/{infile}.tag --random {i}"
+                f"--custom text-count 0 0 {orsz} {ocsz} \"P\" 1 1 hard "
+                f"--custom text-count 0 0 {orsz} {ocsz} \"D\" 1 1 hard "
+                f"--pattern-range 0 2 0 2 1 1 "
+                f"--tagfile setup/{infile}.tag --random 00{i}"
             )
 
             success, gen_time = run_command(gen_cmd)
@@ -101,7 +104,7 @@ def run_sturgeon_diff(infile, outfile, irsz, icsz, orsz, ocsz, tstep, tries, met
         f"python sturgeon/tile2scheme.py --outfile {sturgeonD_setup_dir}-P.scheme --tilefile {sturgeonD_setup_dir}.tile --pattern 0=nbr-l 2=single X=single",
         f"python sturgeon/tilediff2scheme.py --outfile {sturgeonD_setup_dir}-D.scheme --tilefile {sturgeonD_setup_dir}.tile --diff-offset-row {irsz+2} --game 1",
         f"python sturgeon/scheme2merge.py --outfile {sturgeonD_setup_dir}-M.scheme --schemefile {sturgeonD_setup_dir}-P.scheme {sturgeonD_setup_dir}-D.scheme",
-        f"python sturgeon/scheme2merge.py --outfile {sturgeonD_setup_dir}_{orsz}.scheme --schemefile {sturgeonD_setup_dir}-M.scheme --remap-row \" -15,-13=6\" \" -1,1=0\" \"13,15=-6\""
+        f"python sturgeon/scheme2merge.py --outfile {sturgeonD_setup_dir}_{orsz}.scheme --schemefile {sturgeonD_setup_dir}-M.scheme --remap-row \" -{irsz+3},-{irsz+1}={irsz-orsz}\" \" -1,1=0\" \"{irsz+1},{irsz+3}={orsz-irsz}\""
     ]
 
     setup_time = 0
@@ -138,6 +141,7 @@ def run_sturgeon_diff(infile, outfile, irsz, icsz, orsz, ocsz, tstep, tries, met
                 f"--gamefile setup/{infile}-{orsz}.game "
                 f"--custom text-count 0 0 {orsz} {ocsz} \"P\" 1 1 hard "
                 f"--custom text-count 0 0 {orsz} {ocsz} \"D\" 1 1 hard "
+                f"--pattern-range 0 2 0 2 1 1 "
                 f"--random {i}"
             )
 
@@ -169,8 +173,8 @@ def main(args):
 
     metrics = {"stwfc": {}, "sturgeon": {}}
 
-    # run_stwfc(infile, outfile, tstep, orsz, ocsz, tries, metrics)
-    # run_sturgeon_block(infile, outfile, irsz, icsz, orsz, ocsz, tstep, tries, metrics)
+    run_stwfc(infile, outfile, tstep, orsz, ocsz, tries, metrics)
+    run_sturgeon_block(infile, outfile, irsz, icsz, orsz, ocsz, tstep, tries, metrics)
     run_sturgeon_diff(infile, outfile, irsz, icsz, orsz, ocsz, tstep, tries, metrics)
 
     metrics_path = Path("results") / "metrics.json"
