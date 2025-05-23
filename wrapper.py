@@ -173,9 +173,9 @@ def main(args):
 
     metrics = {"stwfc": {}, "sturgeon": {}}
 
-    run_stwfc(infile, outfile, tstep, orsz, ocsz, tries, metrics)
     run_sturgeon_block(infile, outfile, irsz, icsz, orsz, ocsz, tstep, tries, metrics)
     run_sturgeon_diff(infile, outfile, irsz, icsz, orsz, ocsz, tstep, tries, metrics)
+    run_stwfc(infile, outfile, tstep, orsz, ocsz, tries, metrics)
 
     metrics_path = Path("results") / "metrics.json"
     with open(metrics_path, "w") as f:
@@ -195,7 +195,9 @@ if __name__ == "__main__":
 
 
 # sample_field_command : python wrapper.py --infile field/path_1_nw --outfile field/field --tries 1 --insize 12 12 --outgrid 10 6 6
-    ## diff merge values (12x12 -> 6x6): --remap-row \" -15,-13=6\" \" -1,1=0\" \"13,15=-6\"
+    ## diff merge values : --remap-row \"0,2=0\" \"{irsz+2},{irsz+4}={orsz-irsz}\"
+    ## diff merge values : --remap-row \" -{irsz+3},-{irsz+1}={irsz-orsz}\" \" -1,1=0\" \"{irsz+1},{irsz+3}={orsz-irsz}\"
 
 # sample_soko_command : python wrapper.py --infile soko/soko_1 --outfile soko/soko_1 --tries 1 --insize 7 6 --outgrid 10 6 6
-    ## diff merge values (7x6 -> 6x6): --remap-row \" -11,-7=1\" \" -2,2=0\" \"7,11=-1\"
+    ## diff merge values : --remap-row \"0,2=0\" \"{irsz+2},{irsz+4}={orsz-irsz}\"
+    ## diff merge values : --remap-row \" -{irsz+4},-{irsz}={irsz-orsz}\" \" -2,2=0\" \"{irsz},{irsz+4}={orsz-irsz}\"
