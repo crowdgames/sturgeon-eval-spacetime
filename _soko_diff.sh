@@ -65,7 +65,7 @@ for ii in `seq -f '%03g' 0 2`; do
     python sturgeon/scheme2output.py --outfile _out/soko-diff/soko \
 	   --schemefile _out/soko-diff/soko_6x.scheme \
 	   --solver pysat-gluecard41 --out-result-none --out-tlvl-none \
-	   --pattern-hard --pattern-ignore-no-in --pattern-single \
+	   --pattern-hard --pattern-ignore-no-in \
 	   --custom text-count 0 0 6 6 "P" 1 1 hard \
 	   --custom text-count 0 0 6 6 "B" 1 2 hard \
 	   --custom text-count 0 0 6 6 "O" 1 2 hard \
@@ -73,5 +73,6 @@ for ii in `seq -f '%03g' 0 2`; do
 	   --custom text-level _out/soko-diff/soko_6x6x7.lvl hard \
 	   --tagfile _out/soko-diff/soko_6x6x7.tag \
 	   --gamefile _out/soko-diff/soko_6x6x7.game \
+	   --pattern-single \
 	   --random ${ii}
 done
