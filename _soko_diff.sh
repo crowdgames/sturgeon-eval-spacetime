@@ -3,6 +3,9 @@ set -ex
 rm -rf _out/soko/diff
 mkdir -p _out/soko/diff
 
+if [[ $# -ne 1 ]]; then exit; fi
+count="$1"
+
 # make transformed and concatenated levels
 
 python sturgeon/level2concat.py --outfile _out/soko/diff/in_00_8x.lvl --pad-between 2 --pad-around _ --game 0 1 2 X --jsonfile stwfc/AIIDE/training/soko/soko_0.json
@@ -61,7 +64,7 @@ python sturgeon/level2concat.py --outfile _out/soko/diff/setup_6x6x6.lvl --pad-b
 
 # generate level
 
-for ii in `seq -f '%02g' 0 2`; do
+for ii in `seq -f '%02g' 0 $((${count}-1))`; do
     python sturgeon/scheme2output.py --outfile _out/soko/diff/out_${ii} \
 	   --schemefile _out/soko/diff/setup_6x.scheme \
 	   --solver pysat-gluecard41 --out-result-none --out-tlvl-none \

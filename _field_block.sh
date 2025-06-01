@@ -3,6 +3,9 @@ set -ex
 rm -rf _out/field/block
 mkdir -p _out/field/block
 
+if [[ $# -ne 1 ]]; then exit; fi
+count="$1"
+
 # make transformed and concatenated levels
 
 python sturgeon/level2concat.py --outfile _out/field/block/in_00_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/field/path_3_2_nw.json
@@ -47,7 +50,7 @@ python sturgeon/level2concat.py --outfile _out/field/block/setup_6x6x7.lvl --pad
 
 # generate levels
 
-for ii in `seq -f '%02g' 0 2`; do
+for ii in `seq -f '%02g' 0 $((${count}-1))`; do
     python sturgeon/scheme2output.py --outfile _out/field/block/out_${ii} \
 	   --schemefile _out/field/block/setup_6x.scheme \
 	   --solver pysat-gluecard41 --out-result-none --out-tlvl-none \
