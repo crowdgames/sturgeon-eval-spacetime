@@ -67,10 +67,10 @@ def run_sturgeon_block(infile, outfile, irsz, icsz, orsz, ocsz, tstep, tries, me
             gen_cmd = (
                 f"python sturgeon/scheme2output.py --outfile {run_out_dir}/out "
                 f"--schemefile {sturgeonB_setup_dir}_{orsz}.scheme "
-                f"--solver pysat-gluecard41 --out-result-none --out-tlvl-none --pattern-hard "
+                f"--solver pysat-gluecard41 --out-result-none --out-tlvl-none --pattern-hard --pattern-single "
                 f"--custom text-count 0 0 {orsz} {ocsz} \"P\" 1 1 hard "
-                f"--custom text-count 0 0 {orsz} {ocsz} \"B\" 1 1 hard "
-                f"--custom text-count 0 0 {orsz} {ocsz} \"O\" 1 1 hard "
+                f"--custom text-count 0 0 {orsz} {ocsz} \"D\" 1 1 hard "
+                f"--custom text-count 0 0 {orsz} {ocsz} \"W\" 0 0 hard "
                 f"--pattern-range 0 2 0 2 1 1 "
                 f"--tagfile setup/{infile}.tag --random 00{i}"
             )
@@ -105,7 +105,7 @@ def run_sturgeon_diff(infile, outfile, irsz, icsz, orsz, ocsz, tstep, tries, met
         f"python sturgeon/tile2scheme.py --outfile {sturgeonD_setup_dir}-P.scheme --tilefile {sturgeonD_setup_dir}.tile --pattern 0=nbr-l 2=single X=single",
         f"python sturgeon/tilediff2scheme.py --outfile {sturgeonD_setup_dir}-D.scheme --tilefile {sturgeonD_setup_dir}.tile --diff-offset-row {irsz+2} --game 1",
         f"python sturgeon/scheme2merge.py --outfile {sturgeonD_setup_dir}-M.scheme --schemefile {sturgeonD_setup_dir}-P.scheme {sturgeonD_setup_dir}-D.scheme",
-        f"python sturgeon/scheme2merge.py --outfile {sturgeonD_setup_dir}_{orsz}.scheme --schemefile {sturgeonD_setup_dir}-M.scheme --remap-row \" -{irsz+4},-{irsz}={irsz-orsz}\" \" -2,2=0\" \"{irsz},{irsz+4}={orsz-irsz}\""
+        f"python sturgeon/scheme2merge.py --outfile {sturgeonD_setup_dir}_{orsz}.scheme --schemefile {sturgeonD_setup_dir}-M.scheme --remap-row \" -{irsz+3},-{irsz+1}={irsz-orsz}\" \" -1,1=0\" \"{irsz+1},{irsz+3}={orsz-irsz}\""
     ]
 
     setup_time = 0
@@ -141,8 +141,8 @@ def run_sturgeon_diff(infile, outfile, irsz, icsz, orsz, ocsz, tstep, tries, met
                 f"--tagfile setup/{infile}-{orsz}.tag "
                 f"--gamefile setup/{infile}-{orsz}.game "
                 f"--custom text-count 0 0 {orsz} {ocsz} \"P\" 1 1 hard "
-                f"--custom text-count 0 0 {orsz} {ocsz} \"B\" 1 1 hard "
-                f"--custom text-count 0 0 {orsz} {ocsz} \"O\" 1 1 hard "
+                f"--custom text-count 0 0 {orsz} {ocsz} \"D\" 1 1 hard "
+                f"--custom text-count 0 0 {orsz} {ocsz} \"W\" 0 0 hard "
                 f"--pattern-range 0 2 0 2 1 1 "
                 f"--random {i}"
             )
