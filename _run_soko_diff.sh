@@ -30,15 +30,15 @@ python sturgeon/level2concat.py --outfile _out/run/soko/diff/in_15_6x.lvl --pad-
 
 # get tileset
 
-python sturgeon/input2tile.py --outfile _out/run/soko/diff/setup_ts.tileset --out-tileset --textfile setup/soko.lvl --imagefile sturgeon/levels/kenney/soko-tile-16.png
+python sturgeon/input2tile.py --outfile _out/run/soko/diff/setup_ts.tileset --out-tileset --textfile setup/soko-tiles.lvl --imagefile sturgeon/levels/kenney/soko-tile-16.png
 
 # make tile and scheme files for each height
 
 python sturgeon/input2tile.py --outfile _out/run/soko/diff/setup_6x.tile --textfile _out/run/soko/diff/in_*_6x.lvl --gamefile _out/run/soko/diff/in_*_6x.game --tileset _out/run/soko/diff/setup_ts.tileset --text-key-only
 python sturgeon/input2tile.py --outfile _out/run/soko/diff/setup_7x.tile --textfile _out/run/soko/diff/in_*_7x.lvl --gamefile _out/run/soko/diff/in_*_7x.game --tileset _out/run/soko/diff/setup_ts.tileset --text-key-only
 
-python sturgeon/tile2scheme.py --outfile _out/run/soko/diff/setup_P_6x.scheme --tilefile _out/run/soko/diff/setup_6x.tile --pattern 0=block-noout,2 2=block-noout,2 X=single
-python sturgeon/tile2scheme.py --outfile _out/run/soko/diff/setup_P_7x.scheme --tilefile _out/run/soko/diff/setup_7x.tile --pattern 0=block-noout,2 2=block-noout,2 X=single
+python sturgeon/tile2scheme.py --outfile _out/run/soko/diff/setup_P_6x.scheme --tilefile _out/run/soko/diff/setup_6x.tile --pattern 0=nbr-plus 2=nbr-plus X=single
+python sturgeon/tile2scheme.py --outfile _out/run/soko/diff/setup_P_7x.scheme --tilefile _out/run/soko/diff/setup_7x.tile --pattern 0=nbr-plus 2=nbr-plus X=single
 
 python sturgeon/scheme2merge.py --outfile _out/run/soko/diff/setup_P.scheme --schemefile _out/run/soko/diff/setup_P_6x.scheme _out/run/soko/diff/setup_P_7x.scheme
 
@@ -64,8 +64,8 @@ for ii in `seq -f '%02g' 0 $((${count}-1))`; do
 	   --pattern-hard --pattern-ignore-no-in \
 	   --custom text-count 0 0 9 9 "P" 1 1 hard \
 	   --custom text-count 0 0 9 9 "B" 2 2 hard \
-	   --tagfile _out/run/soko/diff/setup_9x9x10.tag \
-	   --gamefile _out/run/soko/diff/setup_9x9x10.game \
+	   --tagfile _out/run/soko/diff/setup_9x9x15.tag \
+	   --gamefile _out/run/soko/diff/setup_9x9x15.game \
 	   --pattern-single \
 	   --random ${ii}
 done
