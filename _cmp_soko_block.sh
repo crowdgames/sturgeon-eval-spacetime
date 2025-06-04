@@ -8,25 +8,25 @@ count="$1"
 
 # make transformed and concatenated levels
 
-python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_00_8x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/soko/soko_0.json
-python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_01_8x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/soko/soko_0.json --xform-flip-rows
-python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_02_8x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/soko/soko_0.json --xform-flip-cols
-python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_03_8x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/soko/soko_0.json --xform-flip-rows --xform-flip-cols
+python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_00_8x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/soko/soko_0.json
+python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_01_8x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/soko/soko_0.json --xform-flip-rows
+python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_02_8x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/soko/soko_0.json --xform-flip-cols
+python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_03_8x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/soko/soko_0.json --xform-flip-rows --xform-flip-cols
 
-python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_04_7x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/soko/soko_0.json --xform-rotate 1
-python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_05_7x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/soko/soko_0.json --xform-rotate 1 --xform-flip-rows
-python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_06_7x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/soko/soko_0.json --xform-rotate 1 --xform-flip-cols
-python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_07_7x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/soko/soko_0.json --xform-rotate 1 --xform-flip-rows --xform-flip-cols
+python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_04_7x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/soko/soko_0.json --xform-rotate 1
+python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_05_7x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/soko/soko_0.json --xform-rotate 1 --xform-flip-rows
+python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_06_7x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/soko/soko_0.json --xform-rotate 1 --xform-flip-cols
+python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_07_7x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/soko/soko_0.json --xform-rotate 1 --xform-flip-rows --xform-flip-cols
 
-python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_08_8x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/soko/soko_0.json --xform-rotate 2
-python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_09_8x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/soko/soko_0.json --xform-rotate 2 --xform-flip-rows
-python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_10_8x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/soko/soko_0.json --xform-rotate 2 --xform-flip-cols
-python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_11_8x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/soko/soko_0.json --xform-rotate 2 --xform-flip-rows --xform-flip-cols
+python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_08_8x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/soko/soko_0.json --xform-rotate 2
+python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_09_8x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/soko/soko_0.json --xform-rotate 2 --xform-flip-rows
+python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_10_8x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/soko/soko_0.json --xform-rotate 2 --xform-flip-cols
+python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_11_8x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/soko/soko_0.json --xform-rotate 2 --xform-flip-rows --xform-flip-cols
 
-python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_12_7x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/soko/soko_0.json --xform-rotate 3
-python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_13_7x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/soko/soko_0.json --xform-rotate 3 --xform-flip-rows
-python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_14_7x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/soko/soko_0.json --xform-rotate 3 --xform-flip-cols
-python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_15_7x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/soko/soko_0.json --xform-rotate 3 --xform-flip-rows --xform-flip-cols
+python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_12_7x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/soko/soko_0.json --xform-rotate 3
+python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_13_7x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/soko/soko_0.json --xform-rotate 3 --xform-flip-rows
+python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_14_7x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/soko/soko_0.json --xform-rotate 3 --xform-flip-cols
+python sturgeon/level2concat.py --outfile _out/cmp/soko/block/in_15_7x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/soko/soko_0.json --xform-rotate 3 --xform-flip-rows --xform-flip-cols
 
 # get tileset
 

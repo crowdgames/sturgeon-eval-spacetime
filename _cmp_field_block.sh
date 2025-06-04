@@ -8,25 +8,25 @@ count="$1"
 
 # make transformed and concatenated levels
 
-python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_00_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/field/path_3_2_nw.json
-python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_01_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/field/path_3_2_nw.json --xform-flip-rows
-python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_02_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/field/path_3_2_nw.json --xform-flip-cols
-python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_03_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/field/path_3_2_nw.json --xform-flip-rows --xform-flip-cols
+python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_00_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/field/path_3_2_nw.json
+python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_01_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-flip-rows
+python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_02_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-flip-cols
+python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_03_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-flip-rows --xform-flip-cols
 
-python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_04_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/field/path_3_2_nw.json --xform-rotate 1
-python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_05_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/field/path_3_2_nw.json --xform-rotate 1 --xform-flip-rows
-python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_06_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/field/path_3_2_nw.json --xform-rotate 1 --xform-flip-cols
-python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_07_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/field/path_3_2_nw.json --xform-rotate 1 --xform-flip-rows --xform-flip-cols
+python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_04_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 1
+python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_05_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 1 --xform-flip-rows
+python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_06_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 1 --xform-flip-cols
+python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_07_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 1 --xform-flip-rows --xform-flip-cols
 
-python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_08_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/field/path_3_2_nw.json --xform-rotate 2
-python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_09_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/field/path_3_2_nw.json --xform-rotate 2 --xform-flip-rows
-python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_10_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/field/path_3_2_nw.json --xform-rotate 2 --xform-flip-cols
-python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_11_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/field/path_3_2_nw.json --xform-rotate 2 --xform-flip-rows --xform-flip-cols
+python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_08_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 2
+python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_09_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 2 --xform-flip-rows
+python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_10_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 2 --xform-flip-cols
+python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_11_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 2 --xform-flip-rows --xform-flip-cols
 
-python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_12_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/field/path_3_2_nw.json --xform-rotate 3
-python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_13_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/field/path_3_2_nw.json --xform-rotate 3 --xform-flip-rows
-python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_14_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/field/path_3_2_nw.json --xform-rotate 3 --xform-flip-cols
-python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_15_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/AIIDE/training/field/path_3_2_nw.json --xform-rotate 3 --xform-flip-rows --xform-flip-cols
+python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_12_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 3
+python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_13_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 3 --xform-flip-rows
+python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_14_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 3 --xform-flip-cols
+python sturgeon/level2concat.py --outfile _out/cmp/field/block/in_15_10x.lvl --pad-between 2 --pad-around _ --pad-end T --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 3 --xform-flip-rows --xform-flip-cols
 
 # get tileset
 

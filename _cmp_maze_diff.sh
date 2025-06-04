@@ -8,25 +8,25 @@ count="$1"
 
 # make transformed and concatenated levels
 
-python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_00_8x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/AIIDE/training/maze/small_maze.json
-python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_01_8x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/AIIDE/training/maze/small_maze.json --xform-flip-rows
-python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_02_8x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/AIIDE/training/maze/small_maze.json --xform-flip-cols
-python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_03_8x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/AIIDE/training/maze/small_maze.json --xform-flip-rows --xform-flip-cols
+python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_00_8x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/training_data/maze/small_maze.json
+python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_01_8x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/training_data/maze/small_maze.json --xform-flip-rows
+python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_02_8x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/training_data/maze/small_maze.json --xform-flip-cols
+python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_03_8x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/training_data/maze/small_maze.json --xform-flip-rows --xform-flip-cols
 
-python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_04_7x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/AIIDE/training/maze/small_maze.json --xform-rotate 1
-python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_05_7x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/AIIDE/training/maze/small_maze.json --xform-rotate 1 --xform-flip-rows
-python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_06_7x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/AIIDE/training/maze/small_maze.json --xform-rotate 1 --xform-flip-cols
-python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_07_7x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/AIIDE/training/maze/small_maze.json --xform-rotate 1 --xform-flip-rows --xform-flip-cols
+python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_04_7x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/training_data/maze/small_maze.json --xform-rotate 1
+python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_05_7x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/training_data/maze/small_maze.json --xform-rotate 1 --xform-flip-rows
+python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_06_7x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/training_data/maze/small_maze.json --xform-rotate 1 --xform-flip-cols
+python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_07_7x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/training_data/maze/small_maze.json --xform-rotate 1 --xform-flip-rows --xform-flip-cols
 
-python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_08_8x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/AIIDE/training/maze/small_maze.json --xform-rotate 2
-python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_09_8x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/AIIDE/training/maze/small_maze.json --xform-rotate 2 --xform-flip-rows
-python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_10_8x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/AIIDE/training/maze/small_maze.json --xform-rotate 2 --xform-flip-cols
-python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_11_8x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/AIIDE/training/maze/small_maze.json --xform-rotate 2 --xform-flip-rows --xform-flip-cols
+python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_08_8x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/training_data/maze/small_maze.json --xform-rotate 2
+python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_09_8x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/training_data/maze/small_maze.json --xform-rotate 2 --xform-flip-rows
+python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_10_8x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/training_data/maze/small_maze.json --xform-rotate 2 --xform-flip-cols
+python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_11_8x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/training_data/maze/small_maze.json --xform-rotate 2 --xform-flip-rows --xform-flip-cols
 
-python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_12_7x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/AIIDE/training/maze/small_maze.json --xform-rotate 3
-python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_13_7x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/AIIDE/training/maze/small_maze.json --xform-rotate 3 --xform-flip-rows
-python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_14_7x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/AIIDE/training/maze/small_maze.json --xform-rotate 3 --xform-flip-cols
-python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_15_7x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/AIIDE/training/maze/small_maze.json --xform-rotate 3 --xform-flip-rows --xform-flip-cols
+python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_12_7x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/training_data/maze/small_maze.json --xform-rotate 3
+python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_13_7x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/training_data/maze/small_maze.json --xform-rotate 3 --xform-flip-rows
+python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_14_7x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/training_data/maze/small_maze.json --xform-rotate 3 --xform-flip-cols
+python sturgeon/level2concat.py --outfile _out/cmp/maze/diff/in_15_7x.lvl --pad-between 2 --pad-around W --game 0 1 2 X --jsonfile stwfc/training_data/maze/small_maze.json --xform-rotate 3 --xform-flip-rows --xform-flip-cols
 
 # get tileset
 
