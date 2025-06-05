@@ -57,8 +57,13 @@ python sturgeon/level2concat.py --outfile _out/cmp/field/diff/setup_6x6x6.tag --
 python sturgeon/level2concat.py --outfile _out/cmp/field/diff/setup_6x6x6.lvl --pad-between 2 --size 4 4 --term-inst 6 --pad-around _
 
 # generate level
+logfile="_out/cmp/field/diff/gen_log.csv"
+echo -n > "$logfile"  # Clear log file
 
 for ii in `seq -f '%02g' 0 $((${count}-1))`; do
+	echo "[Run $ii] Starting..."
+    start_time=$(date +%s.%N)
+
     python sturgeon/scheme2output.py --outfile _out/cmp/field/diff/out_${ii} \
 	   --schemefile _out/cmp/field/diff/setup_6x.scheme \
 	   --solver pysat-gluecard41 --out-result-none --out-tlvl-none \
@@ -70,4 +75,11 @@ for ii in `seq -f '%02g' 0 $((${count}-1))`; do
 	   --gamefile _out/cmp/field/diff/setup_6x6x6.game \
 	   --pattern-single \
 	   --random ${ii}
+	
+	exit_code=$?
+    end_time=$(date +%s.%N)
+    duration=$(echo "$end_time - $start_time" | bc -l)
+    duration_fmt=$(printf "%.3f" "$duration")
+
+    echo "$ii,$duration_fmt,$exit_code" >> "$logfile"
 done

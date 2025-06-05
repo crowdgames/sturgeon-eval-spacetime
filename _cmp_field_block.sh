@@ -50,14 +50,27 @@ python sturgeon/level2concat.py --outfile _out/cmp/field/block/setup_6x6x7.lvl -
 
 # generate levels
 
+logfile="_out/cmp/field/block/gen_log.csv"
+echo -n > "$logfile"  # Clear log file
+
 for ii in `seq -f '%02g' 0 $((${count}-1))`; do
+    echo "[Run $ii] Starting..."
+    start_time=$(date +%s.%N)
+
     python sturgeon/scheme2output.py --outfile _out/cmp/field/block/out_${ii} \
-	   --schemefile _out/cmp/field/block/setup_6x.scheme \
-	   --solver pysat-gluecard41 --out-result-none --out-tlvl-none \
-	   --pattern-hard --pattern-ignore-no-in \
-	   --custom text-count 0 0 6 6 "P" 1 1 hard \
-	   --custom text-count 0 0 6 6 "D" 1 1 hard \
-	   --custom text-level _out/cmp/field/block/setup_6x6x7.lvl hard \
-	   --tagfile _out/cmp/field/block/setup_6x6x7.tag \
-	   --random ${ii}
+       --schemefile _out/cmp/field/block/setup_6x.scheme \
+       --solver pysat-gluecard41 --out-result-none --out-tlvl-none \
+       --pattern-hard --pattern-ignore-no-in \
+       --custom text-count 0 0 6 6 "P" 1 1 hard \
+       --custom text-count 0 0 6 6 "D" 1 1 hard \
+       --custom text-level _out/cmp/field/block/setup_6x6x7.lvl hard \
+       --tagfile _out/cmp/field/block/setup_6x6x7.tag \
+       --random ${ii}
+
+	exit_code=$?
+    end_time=$(date +%s.%N)
+    duration=$(echo "$end_time - $start_time" | bc -l)
+    duration_fmt=$(printf "%.3f" "$duration")
+
+    echo "$ii,$duration_fmt,$exit_code" >> "$logfile"
 done
