@@ -1,1 +1,73 @@
-{"train_paths": ["stwfc/training_data/field/path_3_2_nw.json"], "padding": {"pad_width": [[0, 1], [1, 1], [1, 1]], "constant_values": [["t", "T"], ["_", "_"], ["_", "_"]], "axis_order": [2, 1, 0]}, "local_transforms": {"flipx": true, "flipy": true, "rotxy": [1, 2, 3]}, "global_transforms": {"flipx": true, "flipy": true, "rotxy": [1, 2, 3]}, "grid_size": [7, 6, 6], "pattern_size": [2, 3, 3], "elapsed": {"0": 127.27672958374023, "total": 127.27997589111328}, "num_fails": "1/1"}
+{
+    "train_paths": [
+        "stwfc/training_data/field/path_3_2_nw.json"
+    ],
+    "padding": {
+        "pad_width": [
+            [
+                0,
+                1
+            ],
+            [
+                1,
+                1
+            ],
+            [
+                1,
+                1
+            ]
+        ],
+        "constant_values": [
+            [
+                "t",
+                "T"
+            ],
+            [
+                "_",
+                "_"
+            ],
+            [
+                "_",
+                "_"
+            ]
+        ],
+        "axis_order": [
+            2,
+            1,
+            0
+        ]
+    },
+    "local_transforms": {
+        "flipx": true,
+        "flipy": true,
+        "rotxy": [
+            1,
+            2,
+            3
+        ]
+    },
+    "global_transforms": {
+        "flipx": true,
+        "flipy": true,
+        "rotxy": [
+            1,
+            2,
+            3
+        ]
+    },
+    "grid_size": [
+        7,
+        6,
+        6
+    ],
+    "pattern_size": [
+        2,
+        3,
+        3
+    ],
+    "elapsed": {
+        "0": 127.27672958374023,
+        "total": 127.27997589111328
+    },
+    "num_fails": "1/1"
+}
