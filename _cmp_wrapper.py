@@ -48,7 +48,7 @@ def parse_sturgeon_logs(outfile_dir, tries):
 
 def run_stwfc(infile, outfile, tstep, orsz, ocsz, tries, metrics):
     print("Running STWFC...")
-
+    success = run_command(f"rm -rf {outfile}/*")
     stwfc_cmd = (
         f"python stwfc/src/use_coac.py --grid {tstep} {orsz} {ocsz} "
         f"--pattern 2 3 3 --infile {infile} --outfile {outfile} --tries {tries}"
@@ -75,13 +75,13 @@ def run_stwfc(infile, outfile, tstep, orsz, ocsz, tries, metrics):
         gen_time = next((t for idx, t in run_times if idx == i), 0.0)
         runs_data.append({
             "run": i,
-            "gen_time_sec": round(gen_time, 3),
+            "gen_time_sec": round(gen_time, 2),
             "gen_success": int(gen_time > 0 and (tries - num_fail) > i)
         })
 
     metrics["stwfc"] = {
-        "success": int(success),
-        "time_sec": round(total_time, 3),
+        "setup_time_sec": None,
+        "total_time_sec": round(total_time, 2),
         "runs": runs_data
     }
 
@@ -95,14 +95,14 @@ def run_sturgeon_block(outfile, game, tries, metrics):
 
     if not success:
         print("[Error] Bash script failed. No data will be parsed.")
-        metrics["sturgeon-block"] = {
+        metrics["block"] = {
             "setup_time_sec": 0,
             "total_time_sec": 0,
             "runs": [{"run": i, "gen_time_sec": 0, "gen_success": 0} for i in range(tries)]
         }
         return
 
-    metrics["sturgeon-block"] = parse_sturgeon_logs(outfile, tries)
+    metrics["block"] = parse_sturgeon_logs(outfile, tries)
 
 def run_sturgeon_diff(outfile, game, tries, metrics):
     print("Running Sturgeon Diff...")
@@ -114,14 +114,14 @@ def run_sturgeon_diff(outfile, game, tries, metrics):
 
     if not success:
         print("[Error] Bash script failed. No data will be parsed.")
-        metrics["sturgeon-diff"] = {
+        metrics["diff"] = {
             "setup_time_sec": 0,
             "total_time_sec": 0,
             "runs": [{"run": i, "gen_time_sec": 0, "gen_success": 0} for i in range(tries)]
         }
         return
 
-    metrics["sturgeon-diff"] = parse_sturgeon_logs(outfile, tries)
+    metrics["diff"] = parse_sturgeon_logs(outfile, tries)
 
 def main(args):
     game = args.game
@@ -133,13 +133,13 @@ def main(args):
     diff_outfile = Path("_out/cmp") / game / Path("diff")
     os.makedirs(stwfc_outfile, exist_ok=True)
 
-    metrics = {"stwfc": {}, "sturgeon-block": {}, "sturgeon-diff": {}}
+    metrics = {"stwfc": {}, "block": {}, "diff": {}}
 
     run_sturgeon_block(block_outfile, game, tries, metrics)
     run_sturgeon_diff(diff_outfile, game, tries, metrics)
     run_stwfc(infile, stwfc_outfile, tstep, orsz, ocsz, tries, metrics)
 
-    metrics_path = Path("_out") / "metrics.json"
+    metrics_path = Path("_out/cmp/") / game / "metrics.json"
     with open(metrics_path, "w") as f:
         json.dump(metrics, f, indent=2)
     print(f"\nSaved metrics to {metrics_path}")

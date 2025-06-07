@@ -1,0 +1,11 @@
+{
+  "elapsed": null,
+  "gen_success": false,
+  "effective_length": null,
+  "unbroken_effective_length": null,
+  "trivial": false,
+  "trivial_unbroken": false,
+  "has_extra_P": false,
+  "density_non_blank": 0,
+  "char_counts": {}
+}

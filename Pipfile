@@ -16,6 +16,7 @@ webcolors = "*"
 wfc = {file = "wfc", editable = true}
 pillow = "*"
 python-sat = "*"
+pandas = "*"
 
 [solvers-minimal]
 networkx = "*"
