@@ -144,6 +144,8 @@ def main(args):
         json.dump(metrics, f, indent=2)
     print(f"\nSaved metrics to {metrics_path}")
 
+    run_command(f"python postprocess.py --game {game}")
+
 def game_params(game):
     if(game == "field"):
         infile = "stwfc/training_data/field/path_3_2_nw.json"
