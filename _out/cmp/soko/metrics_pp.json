@@ -1,0 +1,410 @@
+{
+  "stwfc": {
+    "setup_time_sec": null,
+    "total_time_sec": 2900.06,
+    "runs": [
+      {
+        "run": 0,
+        "gen_time_sec": 26.87,
+        "lvl_stats": [
+          {
+            "effective_length": null,
+            "trivial": false,
+            "success": false,
+            "density_non_blank": 0,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 1,
+        "gen_time_sec": 504.3,
+        "lvl_stats": [
+          {
+            "effective_length": null,
+            "trivial": false,
+            "success": false,
+            "density_non_blank": 0,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 2,
+        "gen_time_sec": 314.92,
+        "lvl_stats": [
+          {
+            "effective_length": null,
+            "trivial": false,
+            "success": false,
+            "density_non_blank": 0,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 3,
+        "gen_time_sec": 438.71,
+        "lvl_stats": [
+          {
+            "effective_length": null,
+            "trivial": false,
+            "success": false,
+            "density_non_blank": 0,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 4,
+        "gen_time_sec": 245.26,
+        "lvl_stats": [
+          {
+            "effective_length": null,
+            "trivial": false,
+            "success": false,
+            "density_non_blank": 0,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 5,
+        "gen_time_sec": 172.11,
+        "lvl_stats": [
+          {
+            "effective_length": null,
+            "trivial": false,
+            "success": false,
+            "density_non_blank": 0,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 6,
+        "gen_time_sec": 204.68,
+        "lvl_stats": [
+          {
+            "effective_length": null,
+            "trivial": false,
+            "success": false,
+            "density_non_blank": 0,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 7,
+        "gen_time_sec": 241.13,
+        "lvl_stats": [
+          {
+            "effective_length": null,
+            "trivial": false,
+            "success": false,
+            "density_non_blank": 0,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 8,
+        "gen_time_sec": 495.48,
+        "lvl_stats": [
+          {
+            "effective_length": null,
+            "trivial": false,
+            "success": false,
+            "density_non_blank": 0,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 9,
+        "gen_time_sec": 256.55,
+        "lvl_stats": [
+          {
+            "effective_length": null,
+            "trivial": false,
+            "success": false,
+            "density_non_blank": 0,
+            "has_extra_P": false
+          }
+        ]
+      }
+    ]
+  },
+  "block": {
+    "setup_time_sec": 0.16,
+    "total_time_sec": 9.63,
+    "runs": [
+      {
+        "run": 0,
+        "gen_time_sec": 0.93,
+        "lvl_stats": [
+          {
+            "effective_length": 7,
+            "trivial": false,
+            "success": true,
+            "density_non_blank": 0.2024,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 1,
+        "gen_time_sec": 0.93,
+        "lvl_stats": [
+          {
+            "effective_length": 7,
+            "trivial": false,
+            "success": true,
+            "density_non_blank": 0.2103,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 2,
+        "gen_time_sec": 0.96,
+        "lvl_stats": [
+          {
+            "effective_length": 7,
+            "trivial": false,
+            "success": true,
+            "density_non_blank": 0.1984,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 3,
+        "gen_time_sec": 1.06,
+        "lvl_stats": [
+          {
+            "effective_length": 7,
+            "trivial": false,
+            "success": true,
+            "density_non_blank": 0.2063,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 4,
+        "gen_time_sec": 1.02,
+        "lvl_stats": [
+          {
+            "effective_length": 7,
+            "trivial": false,
+            "success": true,
+            "density_non_blank": 0.2103,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 5,
+        "gen_time_sec": 0.89,
+        "lvl_stats": [
+          {
+            "effective_length": 7,
+            "trivial": false,
+            "success": true,
+            "density_non_blank": 0.1944,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 6,
+        "gen_time_sec": 0.88,
+        "lvl_stats": [
+          {
+            "effective_length": 7,
+            "trivial": false,
+            "success": true,
+            "density_non_blank": 0.1944,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 7,
+        "gen_time_sec": 0.99,
+        "lvl_stats": [
+          {
+            "effective_length": 7,
+            "trivial": false,
+            "success": true,
+            "density_non_blank": 0.2103,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 8,
+        "gen_time_sec": 0.88,
+        "lvl_stats": [
+          {
+            "effective_length": 7,
+            "trivial": false,
+            "success": true,
+            "density_non_blank": 0.1944,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 9,
+        "gen_time_sec": 0.93,
+        "lvl_stats": [
+          {
+            "effective_length": 7,
+            "trivial": false,
+            "success": true,
+            "density_non_blank": 0.2103,
+            "has_extra_P": false
+          }
+        ]
+      }
+    ]
+  },
+  "diff": {
+    "setup_time_sec": 0.13,
+    "total_time_sec": 1.43,
+    "runs": [
+      {
+        "run": 0,
+        "gen_time_sec": 0.12,
+        "lvl_stats": [
+          {
+            "effective_length": 6,
+            "trivial": false,
+            "success": true,
+            "density_non_blank": 0.0741,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 1,
+        "gen_time_sec": 0.13,
+        "lvl_stats": [
+          {
+            "effective_length": 6,
+            "trivial": false,
+            "success": true,
+            "density_non_blank": 0.0602,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 2,
+        "gen_time_sec": 0.13,
+        "lvl_stats": [
+          {
+            "effective_length": 6,
+            "trivial": false,
+            "success": true,
+            "density_non_blank": 0.0787,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 3,
+        "gen_time_sec": 0.13,
+        "lvl_stats": [
+          {
+            "effective_length": 6,
+            "trivial": false,
+            "success": true,
+            "density_non_blank": 0.0602,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 4,
+        "gen_time_sec": 0.14,
+        "lvl_stats": [
+          {
+            "effective_length": 6,
+            "trivial": false,
+            "success": true,
+            "density_non_blank": 0.0741,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 5,
+        "gen_time_sec": 0.14,
+        "lvl_stats": [
+          {
+            "effective_length": 6,
+            "trivial": false,
+            "success": true,
+            "density_non_blank": 0.0741,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 6,
+        "gen_time_sec": 0.12,
+        "lvl_stats": [
+          {
+            "effective_length": 6,
+            "trivial": false,
+            "success": true,
+            "density_non_blank": 0.0694,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 7,
+        "gen_time_sec": 0.13,
+        "lvl_stats": [
+          {
+            "effective_length": 6,
+            "trivial": false,
+            "success": true,
+            "density_non_blank": 0.0787,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 8,
+        "gen_time_sec": 0.13,
+        "lvl_stats": [
+          {
+            "effective_length": 6,
+            "trivial": false,
+            "success": true,
+            "density_non_blank": 0.0648,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 9,
+        "gen_time_sec": 0.13,
+        "lvl_stats": [
+          {
+            "effective_length": 6,
+            "trivial": false,
+            "success": true,
+            "density_non_blank": 0.0787,
+            "has_extra_P": false
+          }
+        ]
+      }
+    ]
+  }
+}

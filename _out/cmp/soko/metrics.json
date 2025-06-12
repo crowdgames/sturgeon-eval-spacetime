@@ -1,0 +1,170 @@
+{
+  "stwfc": {
+    "setup_time_sec": null,
+    "total_time_sec": 2900.06,
+    "runs": [
+      {
+        "run": 0,
+        "gen_time_sec": 26.87,
+        "gen_success": 0
+      },
+      {
+        "run": 1,
+        "gen_time_sec": 504.3,
+        "gen_success": 0
+      },
+      {
+        "run": 2,
+        "gen_time_sec": 314.92,
+        "gen_success": 0
+      },
+      {
+        "run": 3,
+        "gen_time_sec": 438.71,
+        "gen_success": 0
+      },
+      {
+        "run": 4,
+        "gen_time_sec": 245.26,
+        "gen_success": 0
+      },
+      {
+        "run": 5,
+        "gen_time_sec": 172.11,
+        "gen_success": 0
+      },
+      {
+        "run": 6,
+        "gen_time_sec": 204.68,
+        "gen_success": 0
+      },
+      {
+        "run": 7,
+        "gen_time_sec": 241.13,
+        "gen_success": 0
+      },
+      {
+        "run": 8,
+        "gen_time_sec": 495.48,
+        "gen_success": 0
+      },
+      {
+        "run": 9,
+        "gen_time_sec": 256.55,
+        "gen_success": 0
+      }
+    ]
+  },
+  "block": {
+    "setup_time_sec": 0.16,
+    "total_time_sec": 9.63,
+    "runs": [
+      {
+        "run": 0,
+        "gen_time_sec": 0.93,
+        "gen_success": 1
+      },
+      {
+        "run": 1,
+        "gen_time_sec": 0.93,
+        "gen_success": 1
+      },
+      {
+        "run": 2,
+        "gen_time_sec": 0.96,
+        "gen_success": 1
+      },
+      {
+        "run": 3,
+        "gen_time_sec": 1.06,
+        "gen_success": 1
+      },
+      {
+        "run": 4,
+        "gen_time_sec": 1.02,
+        "gen_success": 1
+      },
+      {
+        "run": 5,
+        "gen_time_sec": 0.89,
+        "gen_success": 1
+      },
+      {
+        "run": 6,
+        "gen_time_sec": 0.88,
+        "gen_success": 1
+      },
+      {
+        "run": 7,
+        "gen_time_sec": 0.99,
+        "gen_success": 1
+      },
+      {
+        "run": 8,
+        "gen_time_sec": 0.88,
+        "gen_success": 1
+      },
+      {
+        "run": 9,
+        "gen_time_sec": 0.93,
+        "gen_success": 1
+      }
+    ]
+  },
+  "diff": {
+    "setup_time_sec": 0.13,
+    "total_time_sec": 1.43,
+    "runs": [
+      {
+        "run": 0,
+        "gen_time_sec": 0.12,
+        "gen_success": 1
+      },
+      {
+        "run": 1,
+        "gen_time_sec": 0.13,
+        "gen_success": 1
+      },
+      {
+        "run": 2,
+        "gen_time_sec": 0.13,
+        "gen_success": 1
+      },
+      {
+        "run": 3,
+        "gen_time_sec": 0.13,
+        "gen_success": 1
+      },
+      {
+        "run": 4,
+        "gen_time_sec": 0.14,
+        "gen_success": 1
+      },
+      {
+        "run": 5,
+        "gen_time_sec": 0.14,
+        "gen_success": 1
+      },
+      {
+        "run": 6,
+        "gen_time_sec": 0.12,
+        "gen_success": 1
+      },
+      {
+        "run": 7,
+        "gen_time_sec": 0.13,
+        "gen_success": 1
+      },
+      {
+        "run": 8,
+        "gen_time_sec": 0.13,
+        "gen_success": 1
+      },
+      {
+        "run": 9,
+        "gen_time_sec": 0.13,
+        "gen_success": 1
+      }
+    ]
+  }
+}
