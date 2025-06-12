@@ -1,0 +1,16 @@
+{
+  "elapsed": 580.54,
+  "gen_success": true,
+  "effective_length": 6,
+  "unbroken_effective_length": 6,
+  "trivial": false,
+  "trivial_unbroken": false,
+  "has_extra_P": false,
+  "density_non_blank": 0.8281,
+  "char_counts": {
+    "D": "1",
+    "P": "1",
+    "W": "51",
+    "_": "11"
+  }
+}

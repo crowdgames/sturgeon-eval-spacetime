@@ -1,11 +1,11 @@
 {
   "stwfc": {
     "setup_time_sec": null,
-    "total_time_sec": 793.13,
+    "total_time_sec": 1279.21,
     "runs": [
       {
         "run": 0,
-        "gen_time_sec": 116.97,
+        "gen_time_sec": 233.12,
         "lvl_stats": [
           {
             "effective_length": null,
@@ -18,7 +18,7 @@
       },
       {
         "run": 1,
-        "gen_time_sec": 48.42,
+        "gen_time_sec": 74.99,
         "lvl_stats": [
           {
             "effective_length": null,
@@ -31,7 +31,7 @@
       },
       {
         "run": 2,
-        "gen_time_sec": 69.68,
+        "gen_time_sec": 105.71,
         "lvl_stats": [
           {
             "effective_length": null,
@@ -44,24 +44,24 @@
       },
       {
         "run": 3,
-        "gen_time_sec": 60.21,
+        "gen_time_sec": 97.31,
         "lvl_stats": [
           {
-            "effective_length": 5,
+            "effective_length": null,
             "trivial": false,
-            "success": true,
-            "density_non_blank": 0.0312,
+            "success": false,
+            "density_non_blank": 0,
             "has_extra_P": false
           }
         ]
       },
       {
         "run": 4,
-        "gen_time_sec": 86.87,
+        "gen_time_sec": 96.59,
         "lvl_stats": [
           {
-            "effective_length": 1,
-            "trivial": true,
+            "effective_length": 6,
+            "trivial": false,
             "success": true,
             "density_non_blank": 0.0938,
             "has_extra_P": true
@@ -70,20 +70,20 @@
       },
       {
         "run": 5,
-        "gen_time_sec": 58.78,
+        "gen_time_sec": 154.4,
         "lvl_stats": [
           {
-            "effective_length": 6,
+            "effective_length": null,
             "trivial": false,
-            "success": true,
-            "density_non_blank": 0.0625,
-            "has_extra_P": true
+            "success": false,
+            "density_non_blank": 0,
+            "has_extra_P": false
           }
         ]
       },
       {
         "run": 6,
-        "gen_time_sec": 122.33,
+        "gen_time_sec": 103.07,
         "lvl_stats": [
           {
             "effective_length": 1,
@@ -96,20 +96,20 @@
       },
       {
         "run": 7,
-        "gen_time_sec": 88.06,
+        "gen_time_sec": 170.35,
         "lvl_stats": [
           {
-            "effective_length": 6,
+            "effective_length": 7,
             "trivial": false,
             "success": true,
-            "density_non_blank": 0.0625,
+            "density_non_blank": 0.0938,
             "has_extra_P": true
           }
         ]
       },
       {
         "run": 8,
-        "gen_time_sec": 45.33,
+        "gen_time_sec": 124.78,
         "lvl_stats": [
           {
             "effective_length": null,
@@ -122,10 +122,10 @@
       },
       {
         "run": 9,
-        "gen_time_sec": 96.47,
+        "gen_time_sec": 118.87,
         "lvl_stats": [
           {
-            "effective_length": 6,
+            "effective_length": 4,
             "trivial": false,
             "success": true,
             "density_non_blank": 0.0938,
@@ -136,12 +136,12 @@
     ]
   },
   "block": {
-    "setup_time_sec": 0.13,
-    "total_time_sec": 3.4,
+    "setup_time_sec": 0.14,
+    "total_time_sec": 3.73,
     "runs": [
       {
         "run": 0,
-        "gen_time_sec": 0.34,
+        "gen_time_sec": 0.36,
         "lvl_stats": [
           {
             "effective_length": 7,
@@ -154,7 +154,7 @@
       },
       {
         "run": 1,
-        "gen_time_sec": 0.34,
+        "gen_time_sec": 0.38,
         "lvl_stats": [
           {
             "effective_length": 7,
@@ -167,7 +167,7 @@
       },
       {
         "run": 2,
-        "gen_time_sec": 0.32,
+        "gen_time_sec": 0.34,
         "lvl_stats": [
           {
             "effective_length": 7,
@@ -180,7 +180,7 @@
       },
       {
         "run": 3,
-        "gen_time_sec": 0.32,
+        "gen_time_sec": 0.35,
         "lvl_stats": [
           {
             "effective_length": 7,
@@ -193,7 +193,7 @@
       },
       {
         "run": 4,
-        "gen_time_sec": 0.33,
+        "gen_time_sec": 0.34,
         "lvl_stats": [
           {
             "effective_length": 7,
@@ -206,7 +206,7 @@
       },
       {
         "run": 5,
-        "gen_time_sec": 0.33,
+        "gen_time_sec": 0.37,
         "lvl_stats": [
           {
             "effective_length": 7,
@@ -219,7 +219,7 @@
       },
       {
         "run": 6,
-        "gen_time_sec": 0.33,
+        "gen_time_sec": 0.37,
         "lvl_stats": [
           {
             "effective_length": 7,
@@ -232,7 +232,7 @@
       },
       {
         "run": 7,
-        "gen_time_sec": 0.32,
+        "gen_time_sec": 0.4,
         "lvl_stats": [
           {
             "effective_length": 7,
@@ -245,7 +245,7 @@
       },
       {
         "run": 8,
-        "gen_time_sec": 0.32,
+        "gen_time_sec": 0.35,
         "lvl_stats": [
           {
             "effective_length": 7,
@@ -258,7 +258,7 @@
       },
       {
         "run": 9,
-        "gen_time_sec": 0.32,
+        "gen_time_sec": 0.33,
         "lvl_stats": [
           {
             "effective_length": 7,

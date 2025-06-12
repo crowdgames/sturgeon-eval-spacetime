@@ -1,7 +1,7 @@
 {
-  "overall_num_success": 6,
-  "overall_num_trivial": 2,
-  "overall_pct_trivial": 0.3333333333333333,
-  "overall_num_has_extra_P": 5,
-  "overall_pct_has_extra_P": 0.8333333333333334
+  "overall_num_success": 4,
+  "overall_num_trivial": 1,
+  "overall_pct_trivial": 0.25,
+  "overall_num_has_extra_P": 4,
+  "overall_pct_has_extra_P": 1.0
 }

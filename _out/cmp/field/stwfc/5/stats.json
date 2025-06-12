@@ -1,15 +1,11 @@
 {
-  "elapsed": 58.78,
-  "gen_success": true,
-  "effective_length": 6,
+  "elapsed": null,
+  "gen_success": false,
+  "effective_length": null,
   "unbroken_effective_length": null,
   "trivial": false,
   "trivial_unbroken": false,
-  "has_extra_P": true,
-  "density_non_blank": 0.0625,
-  "char_counts": {
-    "D": "2",
-    "P": "2",
-    "_": "60"
-  }
+  "has_extra_P": false,
+  "density_non_blank": 0,
+  "char_counts": {}
 }

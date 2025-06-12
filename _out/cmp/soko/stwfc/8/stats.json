@@ -1,0 +1,17 @@
+{
+  "elapsed": 484.83,
+  "gen_success": true,
+  "effective_length": 2,
+  "unbroken_effective_length": null,
+  "trivial": true,
+  "trivial_unbroken": false,
+  "has_extra_P": true,
+  "density_non_blank": 0.125,
+  "char_counts": {
+    "B": "2",
+    "G": "1",
+    "O": "2",
+    "P": "3",
+    "_": "56"
+  }
+}

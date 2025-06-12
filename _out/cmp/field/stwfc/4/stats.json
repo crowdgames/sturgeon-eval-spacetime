@@ -1,9 +1,9 @@
 {
-  "elapsed": 86.87,
+  "elapsed": 96.59,
   "gen_success": true,
-  "effective_length": 1,
+  "effective_length": 6,
   "unbroken_effective_length": null,
-  "trivial": true,
+  "trivial": false,
   "trivial_unbroken": false,
   "has_extra_P": true,
   "density_non_blank": 0.0938,
