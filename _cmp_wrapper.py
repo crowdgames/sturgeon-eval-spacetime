@@ -50,7 +50,7 @@ def run_stwfc(infile, outfile, tstep, orsz, ocsz, tries, metrics, game):
     print("Running STWFC...")
     success = run_command(f"rm -rf {outfile}/*")
     stwfc_cmd = (
-        f"python stwfc/src/use_coac.py --game {game} --grid {tstep-1} {orsz-2} {ocsz-2} "
+        f"python stwfc/src/use_coac.py --game {game} --grid {tstep} {orsz-2} {ocsz-2} "
         f"--pattern 2 3 3 --infile {infile} --outfile {outfile} --tries {tries}"
     )
     success = run_command(stwfc_cmd)
@@ -147,13 +147,12 @@ def main(args):
     run_command(f"python postprocess.py --game {game}")
 
 def game_params(game):
-    if(game == "field"):
-        infile = "stwfc/training_data/field/path_3_2_nw.json"
-    elif(game == "maze"):
-        infile = "stwfc/training_data/maze/small_maze.json"
-    elif(game == "soko"):
-        infile = "stwfc/training_data/soko/soko_0.json"
-    return infile
+    paths = {
+        "field": "stwfc/training_data/field/path_3_2_nw.json",
+        "maze": "stwfc/training_data/maze/small_maze.json",
+        "soko": "stwfc/training_data/soko/soko_0.json",
+    }
+    return paths.get(game)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

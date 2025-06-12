@@ -32,14 +32,34 @@ def parse_lvl_file(filepath):
             raise ValueError(f"Inconsistent grid shape in {filepath}")
     return np.array(grids)
 
-def analyze_lvl_array(arr):
-    T = arr.shape[0]
+def analyze_lvl_array(arr, method):
+    unique_values, counts = np.unique(arr[0], return_counts=True)
+    value_counts = dict(zip(unique_values, counts))
+    sum_counts = sum(value_counts.values())
+    sum_non_blank = sum(v for k, v in value_counts.items() if k != "_")
+    density = sum_non_blank / sum_counts if sum_counts > 0 else 0
+
+    has_extra_P = any(np.sum(frame == "P") > 1 for frame in arr)
+
+    if method == "block":
+        t = len(arr) - 2  # padding at end
+    elif method == "diff":
+        t = len(arr) - 1  # last frame is valid
+
+    final_timestep = arr[t]
+    while t > 0 and np.array_equal(arr[t - 1], final_timestep):
+        t -= 1
+    eff_len = t + 1
+
+    trivial = eff_len <= 3
+    success = not np.all(arr[-1] == "_")
+
     return {
-        "effective_length": int(T),
-        "trivial": bool(T <= 3),
-        "success": bool(not np.all(arr[-1] == "_")),
-        "density_non_blank": float(round(np.sum(arr != "_") / (T * np.prod(arr[0].shape)), 4)),
-        "has_extra_P": bool(np.any([np.sum(frame == "P") > 1 for frame in arr]))
+        "effective_length": int(eff_len),
+        "trivial": trivial,
+        "success": success,
+        "density_non_blank": round(density, 4),
+        "has_extra_P": has_extra_P
     }
 
 def update_metrics(base_dir, metrics_input, methods):
@@ -73,7 +93,7 @@ def update_metrics(base_dir, metrics_input, methods):
                     continue
                 run_num = int(m.group(1))
                 arr = parse_lvl_file(lvl_file)
-                stats = analyze_lvl_array(arr)
+                stats = analyze_lvl_array(arr, method)
 
                 gen_time = original.get(run_num, {}).get("gen_time_sec")
                 data["runs"].append({
