@@ -46,11 +46,11 @@ def parse_sturgeon_logs(outfile_dir, tries):
         "runs": runs_data
     }
 
-def run_stwfc(infile, outfile, tstep, orsz, ocsz, tries, metrics):
+def run_stwfc(infile, outfile, tstep, orsz, ocsz, tries, metrics, game):
     print("Running STWFC...")
     success = run_command(f"rm -rf {outfile}/*")
     stwfc_cmd = (
-        f"python stwfc/src/use_coac.py --grid {tstep} {orsz} {ocsz} "
+        f"python stwfc/src/use_coac.py --game {game} --grid {tstep} {orsz} {ocsz} "
         f"--pattern 2 3 3 --infile {infile} --outfile {outfile} --tries {tries}"
     )
     success = run_command(stwfc_cmd)
@@ -137,7 +137,7 @@ def main(args):
 
     run_sturgeon_block(block_outfile, game, tries, metrics)
     run_sturgeon_diff(diff_outfile, game, tries, metrics)
-    run_stwfc(infile, stwfc_outfile, tstep, orsz, ocsz, tries, metrics)
+    run_stwfc(infile, stwfc_outfile, tstep, orsz, ocsz, tries, metrics, game)
 
     metrics_path = Path("_out/cmp/") / game / "metrics.json"
     with open(metrics_path, "w") as f:
