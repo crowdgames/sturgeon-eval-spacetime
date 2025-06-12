@@ -50,7 +50,7 @@ def run_stwfc(infile, outfile, tstep, orsz, ocsz, tries, metrics, game):
     print("Running STWFC...")
     success = run_command(f"rm -rf {outfile}/*")
     stwfc_cmd = (
-        f"python stwfc/src/use_coac.py --game {game} --grid {tstep} {orsz} {ocsz} "
+        f"python stwfc/src/use_coac.py --game {game} --grid {tstep-1} {orsz-2} {ocsz-2} "
         f"--pattern 2 3 3 --infile {infile} --outfile {outfile} --tries {tries}"
     )
     success = run_command(stwfc_cmd)
