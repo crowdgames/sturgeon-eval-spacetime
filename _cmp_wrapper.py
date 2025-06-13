@@ -144,7 +144,7 @@ def main(args):
         json.dump(metrics, f, indent=2)
     print(f"\nSaved metrics to {metrics_path}")
 
-    run_command(f"python postprocess.py --game {game}")
+    run_command(f"python postprocess.py --game {game} --out cmp")
 
 def game_params(game):
     paths = {

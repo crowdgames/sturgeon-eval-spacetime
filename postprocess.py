@@ -69,7 +69,7 @@ def update_metrics(base_dir, metrics_input, methods):
     -for each run, pulling gen_time_sec from metrics_input["<method>"]["runs"]
     -recomputing only the lvl_stats from the .lvl files (or stats.json)
     """
-    out = {}
+    out_metrics = {}
     for method in methods:
         src = metrics_input.get(method, {})
 
@@ -132,27 +132,32 @@ def update_metrics(base_dir, metrics_input, methods):
                     "lvl_stats": [lvl_stats]
                 })
 
-        out[method] = data
+        out_metrics[method] = data
 
-    return out
+    return out_metrics
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--game", required=True)
+    parser.add_argument("--game", required=True, help="Game to analyze: field, maze, soko, blockdude")
+    parser.add_argument("--out", required=True, help="'cmp' for comparison, 'run' for individual runs")
     args = parser.parse_args()
 
-    game = args.game
-    base_dir = f"_out/cmp/{game}"
-    metrics_path = Path(base_dir) / "metrics.json"
-    output_path  = Path(base_dir) / "metrics_pp.json"
+    base_dir = Path(f"_out/{args.out}/{args.game}")
+    metrics_path = base_dir / "metrics.json"
+    output_path  = base_dir / "metrics_pp.json"
 
-    with open(metrics_path, "r", encoding="utf-8") as f:
+    with metrics_path.open("r", encoding="utf-8") as f:
         raw_metrics = json.load(f)
 
-    run_command(f"python st_datavis.py --game {game} --outdir {base_dir}/stwfc")
+    if args.out == "cmp":
+        run_command(f"python st_datavis.py --game {args.game} --outdir {base_dir}/stwfc")
 
-    methods    = ["stwfc", "block", "diff"]
+    methods = {
+        "cmp": ["stwfc", "block", "diff"],
+        "run": ["diff"]
+    }.get(args.out, [])
+
     metrics_pp = update_metrics(base_dir, raw_metrics, methods)
 
-    with open(output_path, "w", encoding="utf-8") as f:
+    with output_path.open("w", encoding="utf-8") as f:
         json.dump(metrics_pp, f, indent=2)

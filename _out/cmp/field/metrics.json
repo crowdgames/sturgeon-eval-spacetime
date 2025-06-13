@@ -1,56 +1,56 @@
 {
   "stwfc": {
     "setup_time_sec": null,
-    "total_time_sec": 105.61,
+    "total_time_sec": 107.94,
     "runs": [
       {
         "run": 0,
-        "gen_time_sec": 4.34,
+        "gen_time_sec": 4.46,
         "gen_success": 1
       },
       {
         "run": 1,
-        "gen_time_sec": 10.42,
+        "gen_time_sec": 14.09,
         "gen_success": 1
       },
       {
         "run": 2,
-        "gen_time_sec": 4.04,
+        "gen_time_sec": 4.71,
         "gen_success": 1
       },
       {
         "run": 3,
-        "gen_time_sec": 7.33,
+        "gen_time_sec": 7.6,
         "gen_success": 1
       },
       {
         "run": 4,
-        "gen_time_sec": 3.71,
+        "gen_time_sec": 3.8,
         "gen_success": 1
       },
       {
         "run": 5,
-        "gen_time_sec": 30.71,
+        "gen_time_sec": 31.1,
         "gen_success": 0
       },
       {
         "run": 6,
-        "gen_time_sec": 10.69,
+        "gen_time_sec": 7.5,
         "gen_success": 0
       },
       {
         "run": 7,
-        "gen_time_sec": 9.42,
+        "gen_time_sec": 12.56,
         "gen_success": 0
       },
       {
         "run": 8,
-        "gen_time_sec": 2.62,
+        "gen_time_sec": 2.64,
         "gen_success": 0
       },
       {
         "run": 9,
-        "gen_time_sec": 22.31,
+        "gen_time_sec": 19.47,
         "gen_success": 0
       }
     ]
@@ -61,17 +61,17 @@
     "runs": [
       {
         "run": 0,
-        "gen_time_sec": 0.35,
+        "gen_time_sec": 0.36,
         "gen_success": 1
       },
       {
         "run": 1,
-        "gen_time_sec": 0.33,
+        "gen_time_sec": 0.35,
         "gen_success": 1
       },
       {
         "run": 2,
-        "gen_time_sec": 0.32,
+        "gen_time_sec": 0.34,
         "gen_success": 1
       },
       {
@@ -96,28 +96,28 @@
       },
       {
         "run": 7,
-        "gen_time_sec": 0.35,
+        "gen_time_sec": 0.34,
         "gen_success": 1
       },
       {
         "run": 8,
-        "gen_time_sec": 0.37,
+        "gen_time_sec": 0.34,
         "gen_success": 1
       },
       {
         "run": 9,
-        "gen_time_sec": 0.36,
+        "gen_time_sec": 0.35,
         "gen_success": 1
       }
     ]
   },
   "diff": {
-    "setup_time_sec": 0.17,
-    "total_time_sec": 0.65,
+    "setup_time_sec": 0.18,
+    "total_time_sec": 0.68,
     "runs": [
       {
         "run": 0,
-        "gen_time_sec": 0.04,
+        "gen_time_sec": 0.05,
         "gen_success": 1
       },
       {
@@ -152,7 +152,7 @@
       },
       {
         "run": 7,
-        "gen_time_sec": 0.04,
+        "gen_time_sec": 0.05,
         "gen_success": 1
       },
       {

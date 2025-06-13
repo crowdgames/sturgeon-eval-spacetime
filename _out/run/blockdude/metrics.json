@@ -1,0 +1,58 @@
+{
+  "diff": {
+    "setup_time_sec": 0.08,
+    "total_time_sec": 31.05,
+    "runs": [
+      {
+        "run": 0,
+        "gen_time_sec": 3.3,
+        "gen_success": 1
+      },
+      {
+        "run": 1,
+        "gen_time_sec": 2.57,
+        "gen_success": 1
+      },
+      {
+        "run": 2,
+        "gen_time_sec": 2.86,
+        "gen_success": 1
+      },
+      {
+        "run": 3,
+        "gen_time_sec": 2.68,
+        "gen_success": 1
+      },
+      {
+        "run": 4,
+        "gen_time_sec": 2.64,
+        "gen_success": 1
+      },
+      {
+        "run": 5,
+        "gen_time_sec": 2.9,
+        "gen_success": 1
+      },
+      {
+        "run": 6,
+        "gen_time_sec": 2.93,
+        "gen_success": 1
+      },
+      {
+        "run": 7,
+        "gen_time_sec": 2.77,
+        "gen_success": 1
+      },
+      {
+        "run": 8,
+        "gen_time_sec": 2.56,
+        "gen_success": 1
+      },
+      {
+        "run": 9,
+        "gen_time_sec": 5.76,
+        "gen_success": 1
+      }
+    ]
+  }
+}

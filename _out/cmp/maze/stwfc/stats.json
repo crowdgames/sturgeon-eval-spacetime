@@ -1,1 +1,82 @@
-{"train_paths": ["stwfc/training_data/maze/small_maze.json"], "padding": {"pad_width": [[0, 1], [1, 1], [1, 1]], "constant_values": [["t", "T"], ["W", "W"], ["W", "W"]], "axis_order": [2, 1, 0]}, "local_transforms": {"flipx": true, "flipy": true, "rotxy": [1, 2, 3]}, "global_transforms": {"flipx": true, "flipy": true, "rotxy": [1, 2, 3]}, "grid_size": [6, 4, 4], "pattern_size": [2, 3, 3], "elapsed": {"0": 14.96721601486206, "1": 115.98594260215759, "2": 87.05554294586182, "3": 85.57402062416077, "4": 18.42031168937683, "5": 9.962961912155151, "6": 11.955122709274292, "7": 89.20485997200012, "8": 11.15827488899231, "9": 127.57126140594482, "total": 571.8664491176605}, "num_fails": "4/10"}
+{
+    "train_paths": [
+        "stwfc/training_data/maze/small_maze.json"
+    ],
+    "padding": {
+        "pad_width": [
+            [
+                0,
+                1
+            ],
+            [
+                1,
+                1
+            ],
+            [
+                1,
+                1
+            ]
+        ],
+        "constant_values": [
+            [
+                "t",
+                "T"
+            ],
+            [
+                "W",
+                "W"
+            ],
+            [
+                "W",
+                "W"
+            ]
+        ],
+        "axis_order": [
+            2,
+            1,
+            0
+        ]
+    },
+    "local_transforms": {
+        "flipx": true,
+        "flipy": true,
+        "rotxy": [
+            1,
+            2,
+            3
+        ]
+    },
+    "global_transforms": {
+        "flipx": true,
+        "flipy": true,
+        "rotxy": [
+            1,
+            2,
+            3
+        ]
+    },
+    "grid_size": [
+        6,
+        4,
+        4
+    ],
+    "pattern_size": [
+        2,
+        3,
+        3
+    ],
+    "elapsed": {
+        "0": 15.23134970664978,
+        "1": 117.71584105491638,
+        "2": 88.0876841545105,
+        "3": 86.63167953491211,
+        "4": 18.71177577972412,
+        "5": 10.07925009727478,
+        "6": 12.046931982040405,
+        "7": 86.36348581314087,
+        "8": 10.770764589309692,
+        "9": 121.01034474372864,
+        "total": 566.6625640392303
+    },
+    "num_fails": "4/10"
+}
