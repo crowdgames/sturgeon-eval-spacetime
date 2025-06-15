@@ -1,0 +1,11 @@
+run,gen_time_sec,success,trivial,effective_length,density_non_blank,has_extra_P
+0,19.62,True,True,2,0.1667,True
+1,99.96,True,True,2,0.1667,True
+2,15.58,False,False,0,0.0,False
+3,20.83,False,False,0,0.0,False
+4,30.15,True,False,6,0.0833,False
+5,189.97,True,False,4,0.0833,False
+6,168.02,False,False,0,0.0,False
+7,164.8,False,False,0,0.0,False
+8,64.94,True,False,6,0.0833,False
+9,23.69,True,True,3,0.1667,True

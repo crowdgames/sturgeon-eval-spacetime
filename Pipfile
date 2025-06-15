@@ -17,6 +17,7 @@ wfc = {file = "wfc", editable = true}
 pillow = "*"
 python-sat = "*"
 pandas = "*"
+jinja2 = "*"
 
 [solvers-minimal]
 networkx = "*"
