@@ -11,6 +11,7 @@ python sturgeon/app_editor.py --outfile _out/run/blockdude/diff/out_edit \
        --custom text-count 0  0 6 20 "D" 1 1 hard \
        --custom text-count 0 17 6 20 "D" 1 1 hard \
        --custom text-count 0  0 6 20 "B" 2 2 hard \
+       --custom text-level _out/run/blockdude/diff/setup_6x20x21.lvl hard \
        --tagfile _out/run/blockdude/diff/setup_6x20x21.tag \
        --gamefile _out/run/blockdude/diff/setup_6x20x21.game \
        --solver pysat-gluecard41 \

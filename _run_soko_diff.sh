@@ -30,15 +30,15 @@ bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_15_19x.lvl 
 
 # get tileset
 
-bash sturgeon/log.sh input2tile.py --outfile _out/run/soko/diff/setup_ts.tileset --out-tileset --textfile setup/soko_og-tiles.lvl --imagefile sturgeon/levels/kenney/soko-over-tile-16.png
+bash sturgeon/log.sh input2tile.py --outfile _out/run/soko/diff/setup_ts.tileset --out-tileset --textfile setup/soko_og-tiles.lvl --imagefile setup/soko_og-tiles.png
 
 # make tile and scheme files for each height
 
 bash sturgeon/log.sh input2tile.py --outfile _out/run/soko/diff/setup_11x.tile --textfile _out/run/soko/diff/in_*_11x.lvl --gamefile _out/run/soko/diff/in_*_11x.game --tileset _out/run/soko/diff/setup_ts.tileset --text-key-only
 bash sturgeon/log.sh input2tile.py --outfile _out/run/soko/diff/setup_19x.tile --textfile _out/run/soko/diff/in_*_19x.lvl --gamefile _out/run/soko/diff/in_*_19x.game --tileset _out/run/soko/diff/setup_ts.tileset --text-key-only
 
-bash sturgeon/log.sh tile2scheme.py --outfile _out/run/soko/diff/setup_P_11x.scheme --tilefile _out/run/soko/diff/setup_11x.tile --pattern 0=nbr-plus 2=nbr-plus X=single
-bash sturgeon/log.sh tile2scheme.py --outfile _out/run/soko/diff/setup_P_19x.scheme --tilefile _out/run/soko/diff/setup_19x.tile --pattern 0=nbr-plus 2=nbr-plus X=single
+bash sturgeon/log.sh tile2scheme.py --outfile _out/run/soko/diff/setup_P_11x.scheme --tilefile _out/run/soko/diff/setup_11x.tile --pattern 0=single 2=single X=single
+bash sturgeon/log.sh tile2scheme.py --outfile _out/run/soko/diff/setup_P_19x.scheme --tilefile _out/run/soko/diff/setup_19x.tile --pattern 0=single 2=single X=single
 
 bash sturgeon/log.sh scheme2merge.py --outfile _out/run/soko/diff/setup_P.scheme --schemefile _out/run/soko/diff/setup_P_19x.scheme _out/run/soko/diff/setup_P_11x.scheme
 
@@ -49,11 +49,12 @@ bash sturgeon/log.sh tilediff2scheme.py --outfile _out/run/soko/diff/setup_D_19x
 
 bash sturgeon/log.sh scheme2merge.py --outfile _out/run/soko/diff/setup_D_9x-B.scheme --schemefile _out/run/soko/diff/setup_D_11x.scheme --remap-row " -15,-11=2" " -2,2=0" "11,15=-2"
 bash sturgeon/log.sh scheme2merge.py --outfile _out/run/soko/diff/setup_D_9x-A.scheme --schemefile _out/run/soko/diff/setup_D_19x.scheme --remap-row " -23,-19=10" " -2,2=0" "19,23=-10"
-bash sturgeon/log.sh scheme2merge.py --outfile _out/run/soko/diff/setup_9x.scheme --schemefile _out/run/soko/diff/setup_P.scheme _out/run/soko/diff/setup_D_9x-A.scheme _out/run/soko/diff/setup_D_9x-B.scheme
+bash sturgeon/log.sh scheme2merge.py --outfile _out/run/soko/diff/setup_9x.scheme --schemefile _out/run/soko/diff/setup_P.scheme _out/run/soko/diff/setup_D_9x-A.scheme _out/run/soko/diff/setup_D_9x-B.scheme --remove-void
 
 # create tag file and text constraint
 
 bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/setup_9x9x15.tag --pad-between 2 --size 9 9 --term-inst 10 --game 0 1 2 X
+bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/setup_9x9x15.lvl --pad-between 2 --size 7 7 --term-inst 10 --game 0 1 2 X --pad-around W
 
 # generate level
 
@@ -64,6 +65,7 @@ for ii in `seq -f '%02g' 0 $((${count}-1))`; do
 	   --pattern-hard --pattern-ignore-no-in \
 	   --custom text-count 0 0 9 9 "P" 1 1 hard \
 	   --custom text-count 0 0 9 9 "B" 2 2 hard \
+	   --custom text-level _out/run/soko/diff/setup_9x9x15.lvl hard \
 	   --tagfile _out/run/soko/diff/setup_9x9x15.tag \
 	   --gamefile _out/run/soko/diff/setup_9x9x15.game \
 	   --solver pysat-gluecard41 \
