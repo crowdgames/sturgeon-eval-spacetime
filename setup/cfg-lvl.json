@@ -1,0 +1,18 @@
+{
+    "tile": {
+        " ": "black",
+        ",": "lightgrey",
+        "_": "lightgrey",
+        "W": "black",
+        "P": "blue",
+        "Q": "blue",
+        "B": "saddlebrown",
+        "D": "orange",
+        "O": "orange",
+        "G": "green",
+        ".": "goldenrod"
+    },
+    "draw": {
+	"change": "black"
+    }
+}

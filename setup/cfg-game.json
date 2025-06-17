@@ -1,0 +1,11 @@
+{
+    "tile": {
+        "X": "black",
+        "0": "green",
+        "1": "goldenrod",
+        "2": "firebrick"
+    },
+    "draw": {
+	"change": "black"
+    }
+}
