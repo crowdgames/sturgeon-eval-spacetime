@@ -18,7 +18,7 @@ W__________________W
 W__________________W
 W__________________W
 W___B__W_______W___W
-W___P__W_B_W___W__DW
+W___Q__W_B_W___W__DW
 WWWWWWWWWWWWWWWWWWWW
                     
                     
@@ -26,7 +26,7 @@ W__________________W
 W__________________W
 W__________________W
 W____B_W_______W___W
-W____P_W_B_W___W__DW
+W____Q_W_B_W___W__DW
 WWWWWWWWWWWWWWWWWWWW
                     
                     
@@ -106,14 +106,14 @@ W__________________W
 W__________________W
 W__________________W
 W______W__B____W___W
-W_____BW__PW___W__DW
+W_____BW__QW___W__DW
 WWWWWWWWWWWWWWWWWWWW
                     
                     
 W__________________W
 W__________________W
 W__________B_______W
-W______W___P___W___W
+W______W___Q___W___W
 W_____BW___W___W__DW
 WWWWWWWWWWWWWWWWWWWW
                     
@@ -121,16 +121,8 @@ WWWWWWWWWWWWWWWWWWWW
 W__________________W
 W__________________W
 W___________B______W
-W______W____P__W___W
+W______W____Q__W___W
 W_____BW___W___W__DW
-WWWWWWWWWWWWWWWWWWWW
-                    
-                    
-W__________________W
-W__________________W
-W___________B______W
-W______W_______W___W
-W_____BW___WP__W__DW
 WWWWWWWWWWWWWWWWWWWW
                     
                     
@@ -138,7 +130,7 @@ W__________________W
 W__________________W
 W__________________W
 W______W____B__W___W
-W_____BW___WP__W__DW
+W_____BW___WQ__W__DW
 WWWWWWWWWWWWWWWWWWWW
                     
                     
@@ -146,7 +138,7 @@ W__________________W
 W__________________W
 W__________________W
 W______W_____B_W___W
-W_____BW___W_P_W__DW
+W_____BW___W_Q_W__DW
 WWWWWWWWWWWWWWWWWWWW
                     
                     
@@ -203,6 +195,22 @@ W__________________W
 W__________________W
 W______W_______W___W
 W_____BW___W__BW_PDW
+WWWWWWWWWWWWWWWWWWWW
+                    
+                    
+W__________________W
+W__________________W
+W__________________W
+W______W_______W___W
+W_____BW___W__BW__GW
+WWWWWWWWWWWWWWWWWWWW
+                    
+                    
+W__________________W
+W__________________W
+W__________________W
+W______W_______W___W
+W_____BW___W__BW__GW
 WWWWWWWWWWWWWWWWWWWW
                     
                     

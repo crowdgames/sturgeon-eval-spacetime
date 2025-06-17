@@ -1,109 +1,109 @@
 WWWWWWWWW
-W_______W
-W_P__WW_W
-W___B__OW
-W__O_B_WW
-W__WWWWWW
-WWWW__W_W
-W__W____W
+WWWWWOB_W
+W_W__W__W
+W__O__BPW
+W_WW____W
+W_W_____W
+W_W_W_W_W
+WW__WW__W
 WWWWWWWWW
          
          
 WWWWWWWWW
-W_______W
-W____WW_W
-W_P_B__OW
-W__O_B_WW
-W__WWWWWW
-WWWW__W_W
-W__W____W
+WWWWWOB_W
+W_W__W_PW
+W__O__B_W
+W_WW____W
+W_W_____W
+W_W_W_W_W
+WW__WW__W
 WWWWWWWWW
          
          
 WWWWWWWWW
-W_______W
-W____WW_W
-W__PB__OW
-W__O_B_WW
-W__WWWWWW
-WWWW__W_W
-W__W____W
+WWWWWOBPW
+W_W__W__W
+W__O__B_W
+W_WW____W
+W_W_____W
+W_W_W_W_W
+WW__WW__W
 WWWWWWWWW
          
          
 WWWWWWWWW
-W_______W
-W____WW_W
-W___PB_OW
-W__O_B_WW
-W__WWWWWW
-WWWW__W_W
-W__W____W
+WWWWWGP_W
+W_W__W__W
+W__O__B_W
+W_WW____W
+W_W_____W
+W_W_W_W_W
+WW__WW__W
 WWWWWWWWW
          
          
 WWWWWWWWW
-W_______W
-W____WW_W
-W____PBOW
-W__O_B_WW
-W__WWWWWW
-WWWW__W_W
-W__W____W
+WWWWWG__W
+W_W__WP_W
+W__O__B_W
+W_WW____W
+W_W_____W
+W_W_W_W_W
+WW__WW__W
 WWWWWWWWW
          
          
 WWWWWWWWW
-W_______W
-W____WW_W
-W_____PGW
-W__O_B_WW
-W__WWWWWW
-WWWW__W_W
-W__W____W
+WWWWWG__W
+W_W__W_PW
+W__O__B_W
+W_WW____W
+W_W_____W
+W_W_W_W_W
+WW__WW__W
 WWWWWWWWW
          
          
 WWWWWWWWW
-W_______W
-W____WW_W
-W______GW
-W__O_BPWW
-W__WWWWWW
-WWWW__W_W
-W__W____W
+WWWWWG__W
+W_W__W__W
+W__O__BPW
+W_WW____W
+W_W_____W
+W_W_W_W_W
+WW__WW__W
 WWWWWWWWW
          
          
 WWWWWWWWW
-W_______W
-W____WW_W
-W______GW
-W__OBP_WW
-W__WWWWWW
-WWWW__W_W
-W__W____W
+WWWWWG__W
+W_W__W__W
+W__O_BP_W
+W_WW____W
+W_W_____W
+W_W_W_W_W
+WW__WW__W
 WWWWWWWWW
          
          
 WWWWWWWWW
-W_______W
-W____WW_W
-W______GW
-W__GP__WW
-W__WWWWWW
-WWWW__W_W
-W__W____W
+WWWWWG__W
+W_W__W__W
+W__OBP__W
+W_WW____W
+W_W_____W
+W_W_W_W_W
+WW__WW__W
 WWWWWWWWW
          
          
 WWWWWWWWW
-W_______W
-W____WW_W
-W______GW
-W__G_P_WW
-W__WWWWWW
-WWWW__W_W
-W__W____W
+WWWWWG__W
+W_W__W__W
+W__GP___W
+W_WW____W
+W_W_____W
+W_W_W_W_W
+WW__WW__W
 WWWWWWWWW
 META {"type": "solver", "id": "pysat-gluecard41", "objective": 0}
