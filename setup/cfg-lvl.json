@@ -1,7 +1,8 @@
 {
     "tile": {
         " ": "black",
-        ",": "lightgrey",
+        ",": "peachpuff",
+        "T": "lightcoral",
         "_": "lightgrey",
         "W": "black",
         "P": "blue",
