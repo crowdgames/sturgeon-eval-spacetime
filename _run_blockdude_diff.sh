@@ -31,8 +31,8 @@ bash sturgeon/log.sh scheme2merge.py --outfile _out/run/blockdude/diff/setup_6x.
 
 # create tag file and text constraint
 
-bash sturgeon/log.sh level2concat.py --outfile _out/run/blockdude/diff/setup_6x20x21.tag --pad-between 2 --size 6 20 --term-inst 21 --game 0 1 2 X
-bash sturgeon/log.sh level2concat.py --outfile _out/run/blockdude/diff/setup_6x20x21.lvl --pad-between 2 --size 4 18 --term-inst 21 --game 0 1 2 X --pad-around W _ W W W W W W
+bash sturgeon/log.sh level2concat.py --outfile _out/run/blockdude/diff/setup_6x12x15.tag --pad-between 2 --size 6 12 --term-inst 15 --game 0 1 2 X
+bash sturgeon/log.sh level2concat.py --outfile _out/run/blockdude/diff/setup_6x12x15.lvl --pad-between 2 --size 4 10 --term-inst 15 --game 0 1 2 X --pad-around W _ W W W W W W
 
 # generate level
 
@@ -41,14 +41,14 @@ for ii in `seq -f '%02g' 0 $((${count}-1))`; do
 	   --schemefile _out/run/blockdude/diff/setup_6x.scheme \
 	   --out-result-none --out-tlvl-none \
 	   --pattern-hard --pattern-ignore-no-in \
-	   --custom text-count 0  0 6 20 "P" 1 1 hard \
-	   --custom text-count 0  0 6  3 "P" 1 1 hard \
-	   --custom text-count 0  0 6 20 "D" 1 1 hard \
-	   --custom text-count 0 17 6 20 "D" 1 1 hard \
-	   --custom text-count 0  0 6 20 "B" 2 2 hard \
-	   --custom text-level _out/run/blockdude/diff/setup_6x20x21.lvl hard \
-	   --tagfile _out/run/blockdude/diff/setup_6x20x21.tag \
-	   --gamefile _out/run/blockdude/diff/setup_6x20x21.game \
+	   --custom text-count 0  0   6 12 "P" 1 1 hard \
+	   --custom text-count 0  0   6  2 "P" 1 1 hard \
+	   --custom text-count 0  0   6 12 "D" 1 1 hard \
+	   --custom text-count 0 10   6 12 "D" 1 1 hard \
+	   --custom text-count 0  2   6 10 "B" 1 1 hard \
+	   --custom text-level _out/run/blockdude/diff/setup_6x12x15.lvl hard \
+	   --tagfile _out/run/blockdude/diff/setup_6x12x15.tag \
+	   --gamefile _out/run/blockdude/diff/setup_6x12x15.game \
 	   --solver pysat-gluecard41 \
 	   --pattern-single \
 	   --random ${ii}
