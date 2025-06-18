@@ -8,25 +8,25 @@ mkdir -p _out/run/soko/diff
 
 # make transformed and concatenated levels
 
-bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_00_11x.lvl --pad-between 2 --game 0 1 2 X --jsonfile setup/soko_og.json
-bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_01_11x.lvl --pad-between 2 --game 0 1 2 X --jsonfile setup/soko_og.json --xform-flip-rows
-bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_02_11x.lvl --pad-between 2 --game 0 1 2 X --jsonfile setup/soko_og.json --xform-flip-cols
-bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_03_11x.lvl --pad-between 2 --game 0 1 2 X --jsonfile setup/soko_og.json --xform-flip-rows --xform-flip-cols
+bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_00_11x.lvl --pad-between 2 --game 0 1 2 X --term-inst 3 --jsonfile setup/soko_og.json
+bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_01_11x.lvl --pad-between 2 --game 0 1 2 X --term-inst 3 --jsonfile setup/soko_og.json --xform-flip-rows
+bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_02_11x.lvl --pad-between 2 --game 0 1 2 X --term-inst 3 --jsonfile setup/soko_og.json --xform-flip-cols
+bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_03_11x.lvl --pad-between 2 --game 0 1 2 X --term-inst 3 --jsonfile setup/soko_og.json --xform-flip-rows --xform-flip-cols
 
-bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_04_19x.lvl --pad-between 2 --game 0 1 2 X --jsonfile setup/soko_og.json --xform-rotate 1
-bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_05_19x.lvl --pad-between 2 --game 0 1 2 X --jsonfile setup/soko_og.json --xform-rotate 1 --xform-flip-rows
-bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_06_19x.lvl --pad-between 2 --game 0 1 2 X --jsonfile setup/soko_og.json --xform-rotate 1 --xform-flip-cols
-bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_07_19x.lvl --pad-between 2 --game 0 1 2 X --jsonfile setup/soko_og.json --xform-rotate 1 --xform-flip-rows --xform-flip-cols
+bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_04_19x.lvl --pad-between 2 --game 0 1 2 X --term-inst 3 --jsonfile setup/soko_og.json --xform-rotate 1
+bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_05_19x.lvl --pad-between 2 --game 0 1 2 X --term-inst 3 --jsonfile setup/soko_og.json --xform-rotate 1 --xform-flip-rows
+bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_06_19x.lvl --pad-between 2 --game 0 1 2 X --term-inst 3 --jsonfile setup/soko_og.json --xform-rotate 1 --xform-flip-cols
+bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_07_19x.lvl --pad-between 2 --game 0 1 2 X --term-inst 3 --jsonfile setup/soko_og.json --xform-rotate 1 --xform-flip-rows --xform-flip-cols
 
-bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_08_11x.lvl --pad-between 2 --game 0 1 2 X --jsonfile setup/soko_og.json --xform-rotate 2
-bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_09_11x.lvl --pad-between 2 --game 0 1 2 X --jsonfile setup/soko_og.json --xform-rotate 2 --xform-flip-rows
-bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_10_11x.lvl --pad-between 2 --game 0 1 2 X --jsonfile setup/soko_og.json --xform-rotate 2 --xform-flip-cols
-bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_11_11x.lvl --pad-between 2 --game 0 1 2 X --jsonfile setup/soko_og.json --xform-rotate 2 --xform-flip-rows --xform-flip-cols
+bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_08_11x.lvl --pad-between 2 --game 0 1 2 X --term-inst 3 --jsonfile setup/soko_og.json --xform-rotate 2
+bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_09_11x.lvl --pad-between 2 --game 0 1 2 X --term-inst 3 --jsonfile setup/soko_og.json --xform-rotate 2 --xform-flip-rows
+bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_10_11x.lvl --pad-between 2 --game 0 1 2 X --term-inst 3 --jsonfile setup/soko_og.json --xform-rotate 2 --xform-flip-cols
+bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_11_11x.lvl --pad-between 2 --game 0 1 2 X --term-inst 3 --jsonfile setup/soko_og.json --xform-rotate 2 --xform-flip-rows --xform-flip-cols
 
-bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_12_19x.lvl --pad-between 2 --game 0 1 2 X --jsonfile setup/soko_og.json --xform-rotate 3
-bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_13_19x.lvl --pad-between 2 --game 0 1 2 X --jsonfile setup/soko_og.json --xform-rotate 3 --xform-flip-rows
-bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_14_19x.lvl --pad-between 2 --game 0 1 2 X --jsonfile setup/soko_og.json --xform-rotate 3 --xform-flip-cols
-bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_15_19x.lvl --pad-between 2 --game 0 1 2 X --jsonfile setup/soko_og.json --xform-rotate 3 --xform-flip-rows --xform-flip-cols
+bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_12_19x.lvl --pad-between 2 --game 0 1 2 X --term-inst 3 --jsonfile setup/soko_og.json --xform-rotate 3
+bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_13_19x.lvl --pad-between 2 --game 0 1 2 X --term-inst 3 --jsonfile setup/soko_og.json --xform-rotate 3 --xform-flip-rows
+bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_14_19x.lvl --pad-between 2 --game 0 1 2 X --term-inst 3 --jsonfile setup/soko_og.json --xform-rotate 3 --xform-flip-cols
+bash sturgeon/log.sh level2concat.py --outfile _out/run/soko/diff/in_15_19x.lvl --pad-between 2 --game 0 1 2 X --term-inst 3 --jsonfile setup/soko_og.json --xform-rotate 3 --xform-flip-rows --xform-flip-cols
 
 # get tileset
 
