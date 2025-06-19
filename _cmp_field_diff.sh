@@ -8,25 +8,25 @@ mkdir -p _out/cmp/field/diff
 
 # make transformed and concatenated levels
 
-bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_00_10x.lvl --pad-between 2 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json
-bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_01_10x.lvl --pad-between 2 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-flip-rows
-bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_02_10x.lvl --pad-between 2 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-flip-cols
-bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_03_10x.lvl --pad-between 2 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-flip-rows --xform-flip-cols
+bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_00_10x.lvl --pad-between 1 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json
+bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_01_10x.lvl --pad-between 1 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-flip-rows
+bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_02_10x.lvl --pad-between 1 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-flip-cols
+bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_03_10x.lvl --pad-between 1 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-flip-rows --xform-flip-cols
 
-bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_04_10x.lvl --pad-between 2 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 1
-bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_05_10x.lvl --pad-between 2 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 1 --xform-flip-rows
-bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_06_10x.lvl --pad-between 2 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 1 --xform-flip-cols
-bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_07_10x.lvl --pad-between 2 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 1 --xform-flip-rows --xform-flip-cols
+bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_04_10x.lvl --pad-between 1 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 1
+bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_05_10x.lvl --pad-between 1 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 1 --xform-flip-rows
+bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_06_10x.lvl --pad-between 1 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 1 --xform-flip-cols
+bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_07_10x.lvl --pad-between 1 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 1 --xform-flip-rows --xform-flip-cols
 
-bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_08_10x.lvl --pad-between 2 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 2
-bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_09_10x.lvl --pad-between 2 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 2 --xform-flip-rows
-bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_10_10x.lvl --pad-between 2 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 2 --xform-flip-cols
-bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_11_10x.lvl --pad-between 2 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 2 --xform-flip-rows --xform-flip-cols
+bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_08_10x.lvl --pad-between 1 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 2
+bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_09_10x.lvl --pad-between 1 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 2 --xform-flip-rows
+bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_10_10x.lvl --pad-between 1 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 2 --xform-flip-cols
+bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_11_10x.lvl --pad-between 1 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 2 --xform-flip-rows --xform-flip-cols
 
-bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_12_10x.lvl --pad-between 2 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 3
-bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_13_10x.lvl --pad-between 2 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 3 --xform-flip-rows
-bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_14_10x.lvl --pad-between 2 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 3 --xform-flip-cols
-bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_15_10x.lvl --pad-between 2 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 3 --xform-flip-rows --xform-flip-cols
+bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_12_10x.lvl --pad-between 1 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 3
+bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_13_10x.lvl --pad-between 1 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 3 --xform-flip-rows
+bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_14_10x.lvl --pad-between 1 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 3 --xform-flip-cols
+bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/in_15_10x.lvl --pad-between 1 --pad-around _ --game 0 1 2 X --jsonfile stwfc/training_data/field/path_3_2_nw.json --xform-rotate 3 --xform-flip-rows --xform-flip-cols
 
 # get tileset
 
@@ -44,17 +44,17 @@ bash sturgeon/log.sh tile2scheme.py --outfile _out/cmp/field/diff/setup_PG_10x.s
 
 bash sturgeon/log.sh scheme2merge.py --outfile _out/cmp/field/diff/setup_P.scheme --schemefile _out/cmp/field/diff/setup_P0_10x.scheme _out/cmp/field/diff/setup_PG_10x.scheme
 
-bash sturgeon/log.sh tilediff2scheme.py --outfile _out/cmp/field/diff/setup_D_10x.scheme --tilefile _out/cmp/field/diff/setup_G_10x.tile --diff-offset-row 12 --game 1
+bash sturgeon/log.sh tilediff2scheme.py --outfile _out/cmp/field/diff/setup_D_10x.scheme --tilefile _out/cmp/field/diff/setup_G_10x.tile --diff-offset-row 11 --game 1
 
 # remap scheme files to output height and merge
 
-bash sturgeon/log.sh scheme2merge.py --outfile _out/cmp/field/diff/setup_D_6x-A.scheme --schemefile _out/cmp/field/diff/setup_D_10x.scheme --remap-row " -13,-11=4" " -1,1=0" "11,13=-4"
+bash sturgeon/log.sh scheme2merge.py --outfile _out/cmp/field/diff/setup_D_6x-A.scheme --schemefile _out/cmp/field/diff/setup_D_10x.scheme --remap-row " -12,-10=4" " -1,1=0" "10,12=-4"
 bash sturgeon/log.sh scheme2merge.py --outfile _out/cmp/field/diff/setup_6x.scheme --schemefile _out/cmp/field/diff/setup_P.scheme _out/cmp/field/diff/setup_D_6x-A.scheme --remove-void
 
 # create tag file and text constraint
 
-bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/setup_6x6x6.tag --pad-between 2 --size 6 6 --term-inst 6 --game 0 1 2 X
-bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/setup_6x6x6.lvl --pad-between 2 --size 4 4 --term-inst 6 --pad-around _
+bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/setup_6x6x6.tag --pad-between 1 --size 6 6 --term-inst 6 --game 0 1 2 X
+bash sturgeon/log.sh level2concat.py --outfile _out/cmp/field/diff/setup_6x6x6.lvl --pad-between 1 --size 4 4 --term-inst 6 --pad-around _
 
 # generate level
 

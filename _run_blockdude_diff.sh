@@ -8,8 +8,8 @@ mkdir -p _out/run/blockdude/diff
 
 # make transformed and concatenated levels
 
-bash sturgeon/log.sh level2concat.py --outfile _out/run/blockdude/diff/in_00_6x.lvl --pad-between 2 --game 0 1 2 X --term-inst 3 --jsonfile setup/blockdude.json
-bash sturgeon/log.sh level2concat.py --outfile _out/run/blockdude/diff/in_01_6x.lvl --pad-between 2 --game 0 1 2 X --term-inst 3 --jsonfile setup/blockdude.json --xform-flip-cols
+bash sturgeon/log.sh level2concat.py --outfile _out/run/blockdude/diff/in_00_6x.lvl --pad-between 1 --game 0 1 2 X --term-inst 3 --jsonfile setup/blockdude.json
+bash sturgeon/log.sh level2concat.py --outfile _out/run/blockdude/diff/in_01_6x.lvl --pad-between 1 --game 0 1 2 X --term-inst 3 --jsonfile setup/blockdude.json --xform-flip-cols
 
 # get tileset
 
@@ -23,7 +23,7 @@ bash sturgeon/log.sh tile2scheme.py --outfile _out/run/blockdude/diff/setup_P_6x
 
 bash sturgeon/log.sh scheme2merge.py --outfile _out/run/blockdude/diff/setup_P.scheme --schemefile _out/run/blockdude/diff/setup_P_6x.scheme
 
-bash sturgeon/log.sh tilediff2scheme.py --outfile _out/run/blockdude/diff/setup_D_6x.scheme --tilefile _out/run/blockdude/diff/setup_6x.tile --diff-offset-row 8 --game 1 --context " -1 0, 1 0"
+bash sturgeon/log.sh tilediff2scheme.py --outfile _out/run/blockdude/diff/setup_D_6x.scheme --tilefile _out/run/blockdude/diff/setup_6x.tile --diff-offset-row 7 --game 1 --context " -1 0, 1 0"
 
 # remap scheme files to output height and merge
 
@@ -31,8 +31,8 @@ bash sturgeon/log.sh scheme2merge.py --outfile _out/run/blockdude/diff/setup_6x.
 
 # create tag file and text constraint
 
-bash sturgeon/log.sh level2concat.py --outfile _out/run/blockdude/diff/setup_6x12x15.tag --pad-between 2 --size 6 12 --term-inst 15 --game 0 1 2 X
-bash sturgeon/log.sh level2concat.py --outfile _out/run/blockdude/diff/setup_6x12x15.lvl --pad-between 2 --size 4 10 --term-inst 15 --game 0 1 2 X --pad-around W _ W W W W W W
+bash sturgeon/log.sh level2concat.py --outfile _out/run/blockdude/diff/setup_6x12x15.tag --pad-between 1 --size 6 12 --term-inst 15 --game 0 1 2 X
+bash sturgeon/log.sh level2concat.py --outfile _out/run/blockdude/diff/setup_6x12x15.lvl --pad-between 1 --size 4 10 --term-inst 15 --game 0 1 2 X --pad-around W _ W W W W W W
 
 # generate level
 
