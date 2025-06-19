@@ -56,113 +56,113 @@
     ]
   },
   "block": {
-    "setup_time_sec": 3.1,
-    "total_time_sec": 12.27,
+    "setup_time_sec": 0.17,
+    "total_time_sec": 9.66,
     "runs": [
       {
         "run": 0,
-        "gen_time_sec": 0.95,
+        "gen_time_sec": 0.98,
         "gen_success": 1
       },
       {
         "run": 1,
-        "gen_time_sec": 0.91,
+        "gen_time_sec": 0.95,
         "gen_success": 1
       },
       {
         "run": 2,
-        "gen_time_sec": 0.89,
+        "gen_time_sec": 0.92,
         "gen_success": 1
       },
       {
         "run": 3,
-        "gen_time_sec": 0.92,
+        "gen_time_sec": 0.93,
         "gen_success": 1
       },
       {
         "run": 4,
-        "gen_time_sec": 0.89,
+        "gen_time_sec": 0.92,
         "gen_success": 1
       },
       {
         "run": 5,
-        "gen_time_sec": 0.92,
+        "gen_time_sec": 0.94,
         "gen_success": 1
       },
       {
         "run": 6,
-        "gen_time_sec": 0.89,
+        "gen_time_sec": 0.97,
         "gen_success": 1
       },
       {
         "run": 7,
-        "gen_time_sec": 0.99,
+        "gen_time_sec": 1.06,
         "gen_success": 1
       },
       {
         "run": 8,
-        "gen_time_sec": 0.89,
+        "gen_time_sec": 0.93,
         "gen_success": 1
       },
       {
         "run": 9,
-        "gen_time_sec": 0.92,
+        "gen_time_sec": 0.89,
         "gen_success": 1
       }
     ]
   },
   "diff": {
     "setup_time_sec": 0.15,
-    "total_time_sec": 1.4,
+    "total_time_sec": 1.56,
     "runs": [
       {
         "run": 0,
-        "gen_time_sec": 0.12,
+        "gen_time_sec": 0.14,
         "gen_success": 1
       },
       {
         "run": 1,
-        "gen_time_sec": 0.13,
+        "gen_time_sec": 0.14,
         "gen_success": 1
       },
       {
         "run": 2,
-        "gen_time_sec": 0.13,
+        "gen_time_sec": 0.14,
         "gen_success": 1
       },
       {
         "run": 3,
-        "gen_time_sec": 0.12,
+        "gen_time_sec": 0.15,
         "gen_success": 1
       },
       {
         "run": 4,
-        "gen_time_sec": 0.13,
+        "gen_time_sec": 0.15,
         "gen_success": 1
       },
       {
         "run": 5,
-        "gen_time_sec": 0.12,
+        "gen_time_sec": 0.14,
         "gen_success": 1
       },
       {
         "run": 6,
-        "gen_time_sec": 0.13,
+        "gen_time_sec": 0.14,
         "gen_success": 1
       },
       {
         "run": 7,
-        "gen_time_sec": 0.12,
+        "gen_time_sec": 0.13,
         "gen_success": 1
       },
       {
         "run": 8,
-        "gen_time_sec": 0.12,
+        "gen_time_sec": 0.14,
         "gen_success": 1
       },
       {
         "run": 9,
-        "gen_time_sec": 0.13,
+        "gen_time_sec": 0.14,
         "gen_success": 1
       }
     ]

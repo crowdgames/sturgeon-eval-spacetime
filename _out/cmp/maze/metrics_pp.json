@@ -137,11 +137,11 @@
   },
   "block": {
     "setup_time_sec": 0.18,
-    "total_time_sec": 17.32,
+    "total_time_sec": 15.41,
     "runs": [
       {
         "run": 0,
-        "gen_time_sec": 1.44,
+        "gen_time_sec": 1.49,
         "lvl_stats": [
           {
             "effective_length": 1,
@@ -154,7 +154,7 @@
       },
       {
         "run": 1,
-        "gen_time_sec": 1.41,
+        "gen_time_sec": 1.52,
         "lvl_stats": [
           {
             "effective_length": 1,
@@ -167,7 +167,7 @@
       },
       {
         "run": 2,
-        "gen_time_sec": 4.4,
+        "gen_time_sec": 1.46,
         "lvl_stats": [
           {
             "effective_length": 1,
@@ -180,7 +180,7 @@
       },
       {
         "run": 3,
-        "gen_time_sec": 1.42,
+        "gen_time_sec": 1.54,
         "lvl_stats": [
           {
             "effective_length": 1,
@@ -193,7 +193,7 @@
       },
       {
         "run": 4,
-        "gen_time_sec": 1.4,
+        "gen_time_sec": 1.45,
         "lvl_stats": [
           {
             "effective_length": 1,
@@ -206,7 +206,7 @@
       },
       {
         "run": 5,
-        "gen_time_sec": 1.43,
+        "gen_time_sec": 1.53,
         "lvl_stats": [
           {
             "effective_length": 1,
@@ -219,7 +219,7 @@
       },
       {
         "run": 6,
-        "gen_time_sec": 1.4,
+        "gen_time_sec": 1.53,
         "lvl_stats": [
           {
             "effective_length": 1,
@@ -232,7 +232,7 @@
       },
       {
         "run": 7,
-        "gen_time_sec": 1.41,
+        "gen_time_sec": 1.51,
         "lvl_stats": [
           {
             "effective_length": 1,
@@ -245,7 +245,7 @@
       },
       {
         "run": 8,
-        "gen_time_sec": 1.44,
+        "gen_time_sec": 1.55,
         "lvl_stats": [
           {
             "effective_length": 1,
@@ -258,7 +258,7 @@
       },
       {
         "run": 9,
-        "gen_time_sec": 1.39,
+        "gen_time_sec": 1.65,
         "lvl_stats": [
           {
             "effective_length": 1,

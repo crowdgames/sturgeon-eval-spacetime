@@ -133,7 +133,15 @@ def main(args):
     diff_outfile = Path("_out/cmp") / game / Path("diff")
     os.makedirs(stwfc_outfile, exist_ok=True)
 
-    metrics = {"stwfc": {}, "block": {}, "diff": {}}
+    metrics_path = Path("_out/cmp/") / game / "metrics.json"
+    metrics = {}
+
+    if metrics_path.exists():
+        with open(metrics_path, "r") as f:
+            metrics = json.load(f)
+    else:
+        print("[Warning] metrics.json not found, creating new one.")
+        metrics = {"stwfc": {}, "block": {}, "diff": {}}
 
     run_sturgeon_block(block_outfile, game, tries, metrics)
     run_sturgeon_diff(diff_outfile, game, tries, metrics)

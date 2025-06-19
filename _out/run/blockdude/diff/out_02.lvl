@@ -1,119 +1,105 @@
 W__________W
-W_________DW
-W________WWW
-WP______BWWW
+W__________W
+W__WWW____DW
+WPBWWWWWWWWW
 WWWWWWWWWWWW
 WWWWWWWWWWWW
-            
             
 W__________W
-W_________DW
-W________WWW
-W_P_____BWWW
+W__________W
+WB_WWW____DW
+WQ_WWWWWWWWW
 WWWWWWWWWWWW
 WWWWWWWWWWWW
-            
             
 W__________W
-W_________DW
-W________WWW
-W__P____BWWW
+W__________W
+W__WWW____DW
+WPBWWWWWWWWW
 WWWWWWWWWWWW
 WWWWWWWWWWWW
-            
             
 W__________W
-W_________DW
-W________WWW
-W___P___BWWW
+W__________W
+WB_WWW____DW
+WQ_WWWWWWWWW
 WWWWWWWWWWWW
 WWWWWWWWWWWW
-            
             
 W__________W
-W_________DW
-W________WWW
-W____P__BWWW
+W__________W
+W__WWW____DW
+WPBWWWWWWWWW
 WWWWWWWWWWWW
 WWWWWWWWWWWW
-            
             
 W__________W
-W_________DW
-W________WWW
-W_____P_BWWW
+W__________W
+W_PWWW____DW
+W_BWWWWWWWWW
 WWWWWWWWWWWW
 WWWWWWWWWWWW
-            
             
 W__________W
-W_________DW
-W________WWW
-W______PBWWW
+W__P_______W
+W__WWW____DW
+W_BWWWWWWWWW
 WWWWWWWWWWWW
 WWWWWWWWWWWW
-            
             
 W__________W
-W_________DW
-W______B_WWW
-W______Q_WWW
+W___P______W
+W__WWW____DW
+W_BWWWWWWWWW
 WWWWWWWWWWWW
 WWWWWWWWWWWW
-            
             
 W__________W
-W_________DW
-W________WWW
-W_____BP_WWW
+W____P_____W
+W__WWW____DW
+W_BWWWWWWWWW
 WWWWWWWWWWWW
 WWWWWWWWWWWW
-            
             
 W__________W
-W_________DW
-W______B_WWW
-W______Q_WWW
+W_____P____W
+W__WWW____DW
+W_BWWWWWWWWW
 WWWWWWWWWWWW
 WWWWWWWWWWWW
-            
             
 W__________W
-W_________DW
-W________WWW
-W______PBWWW
+W__________W
+W__WWWP___DW
+W_BWWWWWWWWW
 WWWWWWWWWWWW
 WWWWWWWWWWWW
-            
             
 W__________W
-W_________DW
-W_______PWWW
-W_______BWWW
+W__________W
+W__WWW_P__DW
+W_BWWWWWWWWW
 WWWWWWWWWWWW
 WWWWWWWWWWWW
-            
             
 W__________W
-W________PDW
-W________WWW
-W_______BWWW
+W__________W
+W__WWW__P_DW
+W_BWWWWWWWWW
 WWWWWWWWWWWW
 WWWWWWWWWWWW
-            
             
 W__________W
-W_________GW
-W________WWW
-W_______BWWW
+W__________W
+W__WWW___PDW
+W_BWWWWWWWWW
 WWWWWWWWWWWW
 WWWWWWWWWWWW
-            
             
 W__________W
-W_________GW
-W________WWW
-W_______BWWW
+W__________W
+W__WWW____GW
+W_BWWWWWWWWW
 WWWWWWWWWWWW
 WWWWWWWWWWWW
 META {"type": "solver", "id": "pysat-gluecard41", "objective": 0}

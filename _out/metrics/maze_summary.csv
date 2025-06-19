@@ -1,4 +1,4 @@
 method,avg_gen_time_sec,avg_effective_length,avg_density_non_blank,success_rate,trivial_rate,has_extra_P_rate
 stwfc,56.665,2.1,0.48335999999999996,0.6,0.3,0.0
-block,1.7139999999999997,1.0,0.8055999999999999,1.0,1.0,0.0
+block,1.5230000000000001,1.0,0.8055999999999999,1.0,1.0,0.0
 diff,0.12999999999999998,1.0,0.8055999999999999,1.0,1.0,0.0

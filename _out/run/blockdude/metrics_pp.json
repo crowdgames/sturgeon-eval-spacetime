@@ -1,11 +1,11 @@
 {
   "diff": {
-    "setup_time_sec": 0.1,
-    "total_time_sec": 18.75,
+    "setup_time_sec": 0.07,
+    "total_time_sec": 11.21,
     "runs": [
       {
         "run": 0,
-        "gen_time_sec": 1.26,
+        "gen_time_sec": 1.23,
         "lvl_stats": [
           {
             "effective_length": 15,
@@ -18,117 +18,117 @@
       },
       {
         "run": 1,
-        "gen_time_sec": 1.23,
+        "gen_time_sec": 1.19,
         "lvl_stats": [
           {
-            "effective_length": 11,
+            "effective_length": 15,
             "trivial": false,
             "success": true,
-            "density_non_blank": 0.6111,
+            "density_non_blank": 0.4861,
             "has_extra_P": false
           }
         ]
       },
       {
         "run": 2,
-        "gen_time_sec": 1.25,
+        "gen_time_sec": 1.1,
         "lvl_stats": [
           {
-            "effective_length": 14,
+            "effective_length": 15,
             "trivial": false,
             "success": true,
-            "density_non_blank": 0.5417,
+            "density_non_blank": 0.6389,
             "has_extra_P": false
           }
         ]
       },
       {
         "run": 3,
-        "gen_time_sec": 1.19,
+        "gen_time_sec": 1.05,
         "lvl_stats": [
           {
-            "effective_length": 14,
+            "effective_length": 15,
             "trivial": false,
             "success": true,
-            "density_non_blank": 0.625,
+            "density_non_blank": 0.7222,
             "has_extra_P": false
           }
         ]
       },
       {
         "run": 4,
-        "gen_time_sec": 1.22,
+        "gen_time_sec": 1.09,
         "lvl_stats": [
           {
             "effective_length": 15,
             "trivial": false,
             "success": true,
-            "density_non_blank": 0.5694,
+            "density_non_blank": 0.6111,
             "has_extra_P": false
           }
         ]
       },
       {
         "run": 5,
-        "gen_time_sec": 1.21,
-        "lvl_stats": [
-          {
-            "effective_length": 15,
-            "trivial": false,
-            "success": true,
-            "density_non_blank": 0.6111,
-            "has_extra_P": false
-          }
-        ]
-      },
-      {
-        "run": 6,
-        "gen_time_sec": 1.34,
-        "lvl_stats": [
-          {
-            "effective_length": 14,
-            "trivial": false,
-            "success": true,
-            "density_non_blank": 0.7083,
-            "has_extra_P": false
-          }
-        ]
-      },
-      {
-        "run": 7,
-        "gen_time_sec": 2.33,
-        "lvl_stats": [
-          {
-            "effective_length": 14,
-            "trivial": false,
-            "success": true,
-            "density_non_blank": 0.625,
-            "has_extra_P": false
-          }
-        ]
-      },
-      {
-        "run": 8,
-        "gen_time_sec": 3.8,
-        "lvl_stats": [
-          {
-            "effective_length": 11,
-            "trivial": false,
-            "success": true,
-            "density_non_blank": 0.6111,
-            "has_extra_P": false
-          }
-        ]
-      },
-      {
-        "run": 9,
-        "gen_time_sec": 3.82,
+        "gen_time_sec": 1.07,
         "lvl_stats": [
           {
             "effective_length": 15,
             "trivial": false,
             "success": true,
             "density_non_blank": 0.6806,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 6,
+        "gen_time_sec": 1.08,
+        "lvl_stats": [
+          {
+            "effective_length": 15,
+            "trivial": false,
+            "success": true,
+            "density_non_blank": 0.6667,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 7,
+        "gen_time_sec": 1.05,
+        "lvl_stats": [
+          {
+            "effective_length": 15,
+            "trivial": false,
+            "success": true,
+            "density_non_blank": 0.6528,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 8,
+        "gen_time_sec": 1.09,
+        "lvl_stats": [
+          {
+            "effective_length": 14,
+            "trivial": false,
+            "success": true,
+            "density_non_blank": 0.5139,
+            "has_extra_P": false
+          }
+        ]
+      },
+      {
+        "run": 9,
+        "gen_time_sec": 1.19,
+        "lvl_stats": [
+          {
+            "effective_length": 14,
+            "trivial": false,
+            "success": true,
+            "density_non_blank": 0.7083,
             "has_extra_P": false
           }
         ]
