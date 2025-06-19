@@ -16,4 +16,4 @@ python sturgeon/app_editor.py --outfile _out/run/blockdude/diff/out_edit \
        --gamefile _out/run/blockdude/diff/setup_6x12x15.game \
        --solver pysat-gluecard41 \
        --pattern-single \
-       --app --app-hard
+       --app --out-no-hash --app-hard

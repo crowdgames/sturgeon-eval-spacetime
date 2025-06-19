@@ -13,4 +13,4 @@ python sturgeon/app_editor.py --outfile _out/run/soko/diff/out_edit \
        --gamefile _out/run/soko/diff/setup_9x9x10.game \
        --solver pysat-gluecard41 \
        --pattern-single \
-       --app --app-hard
+       --app --out-no-hash --app-hard
