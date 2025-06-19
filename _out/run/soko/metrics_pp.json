@@ -1,11 +1,11 @@
 {
   "diff": {
-    "setup_time_sec": 6.58,
-    "total_time_sec": 13.88,
+    "setup_time_sec": 9.26,
+    "total_time_sec": 18.69,
     "runs": [
       {
         "run": 0,
-        "gen_time_sec": 0.74,
+        "gen_time_sec": 0.95,
         "lvl_stats": [
           {
             "effective_length": 10,
@@ -18,7 +18,7 @@
       },
       {
         "run": 1,
-        "gen_time_sec": 0.72,
+        "gen_time_sec": 0.93,
         "lvl_stats": [
           {
             "effective_length": 10,
@@ -31,7 +31,7 @@
       },
       {
         "run": 2,
-        "gen_time_sec": 0.7,
+        "gen_time_sec": 0.88,
         "lvl_stats": [
           {
             "effective_length": 9,
@@ -44,7 +44,7 @@
       },
       {
         "run": 3,
-        "gen_time_sec": 0.7,
+        "gen_time_sec": 0.86,
         "lvl_stats": [
           {
             "effective_length": 9,
@@ -57,7 +57,7 @@
       },
       {
         "run": 4,
-        "gen_time_sec": 0.7,
+        "gen_time_sec": 0.87,
         "lvl_stats": [
           {
             "effective_length": 10,
@@ -70,7 +70,7 @@
       },
       {
         "run": 5,
-        "gen_time_sec": 0.82,
+        "gen_time_sec": 1.05,
         "lvl_stats": [
           {
             "effective_length": 10,
@@ -83,7 +83,7 @@
       },
       {
         "run": 6,
-        "gen_time_sec": 0.73,
+        "gen_time_sec": 0.89,
         "lvl_stats": [
           {
             "effective_length": 10,
@@ -96,7 +96,7 @@
       },
       {
         "run": 7,
-        "gen_time_sec": 0.72,
+        "gen_time_sec": 0.92,
         "lvl_stats": [
           {
             "effective_length": 8,
@@ -109,7 +109,7 @@
       },
       {
         "run": 8,
-        "gen_time_sec": 0.75,
+        "gen_time_sec": 1.08,
         "lvl_stats": [
           {
             "effective_length": 10,
@@ -122,7 +122,7 @@
       },
       {
         "run": 9,
-        "gen_time_sec": 0.72,
+        "gen_time_sec": 1.0,
         "lvl_stats": [
           {
             "effective_length": 10,
