@@ -1,4 +1,4 @@
-method,avg_gen_time_sec,avg_effective_length,avg_density_non_blank,success_rate,trivial_rate,has_extra_P_rate
-stwfc,10.793,1.6,0.04445,0.5,0.3,0.3
-block,0.335,2.7,0.0556,1.0,0.6,0.0
-diff,0.049,5.0,0.0556,1.0,0.2,0.0
+method,avg_gen_time_sec,success_rate,trivial_rate,has_extra_P_rate,avg_effective_length,avg_density_non_blank
+stwfc,10.793,0.5,0.6,0.6,"(3.2,)",0.0889
+block,0.335,1.0,0.6,0.0,"(2.7,)",0.0556
+diff,0.049,1.0,0.2,0.0,"(5.0,)",0.0556
