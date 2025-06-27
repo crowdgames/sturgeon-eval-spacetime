@@ -3,8 +3,7 @@ import pandas as pd
 from pathlib import Path
 
 cmp_games = ["field", "maze", "soko"]
-# run_games = ["soko", "blockdude"]
-run_games = ["soko"]
+run_games = ["soko", "blockdude"]
 methods = ["stwfc", "block", "diff"]
 
 output_dir = Path("_out/metrics")
@@ -49,22 +48,22 @@ def compute_summary(df, method_name):
 
 
 
-# # CMP games
-# for game in cmp_games:
-#     with open(f"_out/cmp/{game}/metrics_pp.json", "r") as f:
-#         cmp_data = json.load(f)
+# CMP games
+for game in cmp_games:
+    with open(f"_out/cmp/{game}/metrics_pp.json", "r") as f:
+        cmp_data = json.load(f)
 
-#     summary_rows = []
-#     for method in methods:
-#         df = extract_runs(cmp_data[method])
-#         df.to_csv(output_dir / f"{game}_{method}_runs.csv", index=False)
-#         print(f"Saved: {game}_{method}_runs.csv")
+    summary_rows = []
+    for method in methods:
+        df = extract_runs(cmp_data[method])
+        df.to_csv(output_dir / f"{game}_{method}_runs.csv", index=False)
+        print(f"Saved: {game}_{method}_runs.csv")
 
-#         summary_rows.append(compute_summary(df, method))
+        summary_rows.append(compute_summary(df, method))
 
-#     summary_df = pd.DataFrame(summary_rows)
-#     summary_df.to_csv(output_dir / f"{game}_summary.csv", index=False)
-#     print(f"Saved summary: {game}_summary.csv")
+    summary_df = pd.DataFrame(summary_rows)
+    summary_df.to_csv(output_dir / f"{game}_summary.csv", index=False)
+    print(f"Saved summary: {game}_summary.csv")
 
 # RUN games
 for game in run_games:
@@ -93,7 +92,7 @@ for game in run_games:
         summary = compute_summary(df, "diff")
         summary["size"] = size
         summary_rows.append(summary)
-    
+
     summary_df = pd.DataFrame(summary_rows)
     summary_df.to_csv(output_dir / f"{game}_run_summary.csv", index=False)
     print(f"Saved summary: {game}_run_summary.csv")

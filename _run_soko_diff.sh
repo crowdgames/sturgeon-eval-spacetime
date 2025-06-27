@@ -96,7 +96,7 @@ for ii in `seq -f '%02g' 0 $((${count}-1))`; do
 	   --out-result-none --out-tlvl-none \
 	   --pattern-hard --pattern-ignore-no-in \
 	   --custom text-count 0 0 12 12 "P" 1 1 hard \
-	   --custom text-count 0 0 12 12 "B" 2 3 hard \
+	   --custom text-count 0 0 12 12 "B" 3 3 hard \
 	   --custom text-level _out/run/soko/setup/setup_12x12x20.lvl hard \
 	   --tagfile _out/run/soko/setup/setup_12x12x20.tag \
 	   --gamefile _out/run/soko/setup/setup_12x12x20.game \

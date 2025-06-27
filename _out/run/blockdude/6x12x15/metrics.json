@@ -1,26 +1,26 @@
 {
   "diff": {
-    "setup_time_sec": 0.07,
-    "total_time_sec": 11.21,
+    "setup_time_sec": 0.0,
+    "total_time_sec": 11.0,
     "runs": [
       {
         "run": 0,
-        "gen_time_sec": 1.23,
+        "gen_time_sec": 1.09,
         "gen_success": 1
       },
       {
         "run": 1,
-        "gen_time_sec": 1.19,
+        "gen_time_sec": 1.05,
         "gen_success": 1
       },
       {
         "run": 2,
-        "gen_time_sec": 1.1,
+        "gen_time_sec": 1.07,
         "gen_success": 1
       },
       {
         "run": 3,
-        "gen_time_sec": 1.05,
+        "gen_time_sec": 1.09,
         "gen_success": 1
       },
       {
@@ -30,27 +30,27 @@
       },
       {
         "run": 5,
-        "gen_time_sec": 1.07,
+        "gen_time_sec": 1.16,
         "gen_success": 1
       },
       {
         "run": 6,
-        "gen_time_sec": 1.08,
+        "gen_time_sec": 1.12,
         "gen_success": 1
       },
       {
         "run": 7,
-        "gen_time_sec": 1.05,
+        "gen_time_sec": 1.11,
         "gen_success": 1
       },
       {
         "run": 8,
-        "gen_time_sec": 1.09,
+        "gen_time_sec": 1.12,
         "gen_success": 1
       },
       {
         "run": 9,
-        "gen_time_sec": 1.19,
+        "gen_time_sec": 1.1,
         "gen_success": 1
       }
     ]

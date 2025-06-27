@@ -1,2 +1,3 @@
-method,avg_gen_time_sec,avg_effective_length,avg_density_non_blank
-diff,1.114 (0.061),14.800 (0.400),0.625 (0.076)
+method,avg_gen_time_sec,success_rate,has_extra_P_rate,trivial_rate,avg_effective_length,avg_density_non_blank,size
+diff,1.100 (0.029),1.0,0.0,0.0,14.800 (0.400),0.625 (0.076),6x12x15
+diff,3.248 (0.550),1.0,0.0,0.0,23.700 (0.458),0.537 (0.056),6x18x24
