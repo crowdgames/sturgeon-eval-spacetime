@@ -46,7 +46,7 @@ def parse_sturgeon_logs(outfile_dir, tries):
         "runs": runs_data
     }
 
-def run_sturgeon_diff(outfile, game, tries, metrics):
+def run_sturgeon_diff(base_dir, game, tries):
     print("Running Sturgeon Diff...")
 
     bash_script = f"_run_{game}_diff.sh"
@@ -56,28 +56,32 @@ def run_sturgeon_diff(outfile, game, tries, metrics):
 
     if not success:
         print("[Error] Bash script failed. No data will be parsed.")
-        metrics["diff"] = {
-            "setup_time_sec": 0,
-            "total_time_sec": 0,
-            "runs": [{"run": i, "gen_time_sec": 0, "gen_success": 0} for i in range(tries)]
-        }
         return
 
-    metrics["diff"] = parse_sturgeon_logs(outfile, tries)
+    for size_dir in sorted(base_dir.iterdir()):
+        if size_dir.name == "setup":
+            continue
+        
+        if size_dir.is_dir():
+            print(f"[Parsing] Size folder: {size_dir.name}")
+            diff_dir = size_dir / "diff"
+            result = parse_sturgeon_logs(diff_dir, tries)
+
+            metrics = {
+                "diff": result
+            }
+
+            metrics_path = size_dir / "metrics.json"
+            with open(metrics_path, "w") as f:
+                json.dump(metrics, f, indent=2)
+            print(f"Saved metrics to {metrics_path}")
 
 def main(args):
     game = args.game
-    tries = args.tries    
-    diff_outfile = Path("_out/run") / game / Path("diff")
+    tries = args.tries
+    base_dir = Path("_out/run") / game
 
-    metrics = {"diff": {}}
-
-    run_sturgeon_diff(diff_outfile, game, tries, metrics)
-
-    metrics_path = Path("_out/run/") / game / "metrics.json"
-    with open(metrics_path, "w") as f:
-        json.dump(metrics, f, indent=2)
-    print(f"\nSaved metrics to {metrics_path}")
+    run_sturgeon_diff(base_dir, game, tries)
 
     run_command(f"python postprocess.py --game {game} --out run")
 

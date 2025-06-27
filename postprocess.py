@@ -42,9 +42,9 @@ def analyze_lvl_array(arr, method):
     has_extra_P = any(np.sum(frame == "P") > 1 for frame in arr)
 
     if method == "block":
-        t = len(arr) - 2  # padding at end
+        t = len(arr) - 2
     elif method == "diff":
-        t = len(arr) - 1  # last frame is valid
+        t = len(arr) - 1
 
     final_timestep = arr[t]
     while t > 0 and np.array_equal(arr[t - 1], final_timestep):
@@ -63,19 +63,12 @@ def analyze_lvl_array(arr, method):
     }
 
 def update_metrics(base_dir, metrics_input, methods):
-    """
-    Build a new metrics_pp dict by:
-    -copying setup_time_sec & total_time_sec from metrics_input
-    -for each run, pulling gen_time_sec from metrics_input["<method>"]["runs"]
-    -recomputing only the lvl_stats from the .lvl files (or stats.json)
-    """
     out_metrics = {}
     for method in methods:
         src = metrics_input.get(method, {})
 
         setup_time = src.get("setup_time_sec")
         total_time = src.get("total_time_sec")
-
         original = {r["run"]: r for r in src.get("runs", [])}
 
         data = {
@@ -103,7 +96,6 @@ def update_metrics(base_dir, metrics_input, methods):
                 })
 
         elif method == "stwfc":
-            # subdirectories "0", "1", "2", …
             run_dirs = [
                 p for p in method_path.iterdir()
                 if p.is_dir() and p.name.isdigit()
@@ -143,21 +135,41 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     base_dir = Path(f"_out/{args.out}/{args.game}")
-    metrics_path = base_dir / "metrics.json"
-    output_path  = base_dir / "metrics_pp.json"
-
-    with metrics_path.open("r", encoding="utf-8") as f:
-        raw_metrics = json.load(f)
 
     if args.out == "cmp":
+        metrics_path = base_dir / "metrics.json"
+        output_path  = base_dir / "metrics_pp.json"
+
+        with metrics_path.open("r", encoding="utf-8") as f:
+            raw_metrics = json.load(f)
+
         run_command(f"python st_datavis.py --game {args.game} --outdir {base_dir}/stwfc")
 
-    methods = {
-        "cmp": ["stwfc", "block", "diff"],
-        "run": ["diff"]
-    }.get(args.out, [])
+        methods = ["stwfc", "block", "diff"]
+        metrics_pp = update_metrics(base_dir, raw_metrics, methods)
 
-    metrics_pp = update_metrics(base_dir, raw_metrics, methods)
+        with output_path.open("w", encoding="utf-8") as f:
+            json.dump(metrics_pp, f, indent=2)
 
-    with output_path.open("w", encoding="utf-8") as f:
-        json.dump(metrics_pp, f, indent=2)
+    elif args.out == "run":
+        methods = ["diff"]
+
+        for size_dir in sorted(base_dir.iterdir()):
+            if size_dir.name == "setup":
+                continue
+            if size_dir.is_dir():
+                metrics_path = size_dir / "metrics.json"
+                output_path = size_dir / "metrics_pp.json"
+
+                if not metrics_path.exists():
+                    print(f"[Skip] No metrics.json in {size_dir}")
+                    continue
+
+                with metrics_path.open("r", encoding="utf-8") as f:
+                    raw_metrics = json.load(f)
+
+                metrics_pp = update_metrics(size_dir, raw_metrics, methods)
+
+                with output_path.open("w", encoding="utf-8") as f:
+                    json.dump(metrics_pp, f, indent=2)
+                print(f"[Saved] {output_path}")
