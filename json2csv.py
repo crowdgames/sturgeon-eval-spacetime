@@ -27,25 +27,25 @@ def extract_runs(method_data):
 
 
 def compute_summary(df, method_name):
-    summary = {
-        "method": method_name,
-        "avg_gen_time_sec": df["gen_time_sec"].mean(),
-    }
+    fmt = lambda x: f"{x.mean():.3f} ({x.std(ddof=0):.3f})"
+    summary = {"method": method_name}
+    summary["avg_gen_time_sec"] = fmt(df["gen_time_sec"])
 
-    # Some statistics should only be averaged over successful runs.
-    successful_only = df
     if "success" in df.columns:
         summary["success_rate"] = df["success"].mean()
-        successful_only = df[df["success"] == True]
-    if "trivial" in df.columns:
-        summary["trivial_rate"] = successful_only["trivial"].mean()
-    if "has_extra_P" in df.columns:
-        summary["has_extra_P_rate"] = successful_only["has_extra_P"].mean()
+        df = df[df["success"] == True]
+        summary["has_extra_P_rate"] = df["has_extra_P"].mean()
+        summary["trivial_rate"] = df["trivial"].mean()
 
-    summary["avg_effective_length"] = (successful_only["effective_length"].mean(),)
-    summary["avg_density_non_blank"] = successful_only["density_non_blank"].mean()
+    for col, name in [
+        ("effective_length", "avg_effective_length"),
+        ("density_non_blank", "avg_density_non_blank"), 
+    ]:
+        if col in df.columns:
+            summary[name] = fmt(df[col])
 
     return summary
+
 
 
 # CMP games

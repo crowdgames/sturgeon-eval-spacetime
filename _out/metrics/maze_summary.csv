@@ -1,4 +1,4 @@
-method,avg_gen_time_sec,success_rate,trivial_rate,has_extra_P_rate,avg_effective_length,avg_density_non_blank
-stwfc,56.665,0.6,0.5,0.0,"(3.5,)",0.8056
-block,1.5230000000000001,1.0,1.0,0.0,"(1.0,)",0.8055999999999999
-diff,0.12999999999999998,1.0,1.0,0.0,"(1.0,)",0.8055999999999999
+method,avg_gen_time_sec,success_rate,has_extra_P_rate,trivial_rate,avg_effective_length,avg_density_non_blank
+stwfc,56.665 (44.788),0.6,0.0,0.5,3.500 (1.979),0.806 (0.000)
+block,1.523 (0.053),1.0,0.0,1.0,1.000 (0.000),0.806 (0.000)
+diff,0.130 (0.000),1.0,0.0,1.0,1.000 (0.000),0.806 (0.000)

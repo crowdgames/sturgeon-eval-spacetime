@@ -1,2 +1,2 @@
 method,avg_gen_time_sec,avg_effective_length,avg_density_non_blank
-diff,1.1139999999999999,"(14.8,)",0.6250000000000001
+diff,1.114 (0.061),14.800 (0.400),0.625 (0.076)
