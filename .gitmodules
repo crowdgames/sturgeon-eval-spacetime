@@ -1,7 +1,3 @@
-[submodule "sturgeon"]
-	path = sturgeon
-	url = https://github.com/crowdgames/sturgeon.git
-	branch = st-levels
 [submodule "stwfc"]
 	path = stwfc
 	url = https://github.com/akshar-23/stwfc.git
