@@ -1,3 +1,6 @@
 [submodule "stwfc"]
 	path = stwfc
 	url = https://github.com/akshar-23/stwfc.git
+[submodule "sturgeon"]
+	path = sturgeon
+	url = https://github.com/crowdgames/sturgeon-pub.git
